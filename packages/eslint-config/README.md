@@ -1,3 +1,9 @@
 # Eslint config
+## Подключение
 
-Правила eslint для проектов PT
+.eslintrc.js проекта должен выглядеть так:
+```js
+module.exports = {
+    extends: '@ptsecurity/eslint-config-new'
+}
+```
