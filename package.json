@@ -14,6 +14,9 @@
     "prettier"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@ptsecurity/commitlint-config": "^1.0.0",
     "lerna": "^3.22.1"
   }
 }

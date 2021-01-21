@@ -1,12 +1,15 @@
 # PT Rules
 
-Правила линтинга для frontend проектов Positive Technologies. 
-
-
-## Начало работы
-```lerna bootstrap```
+Правила линтинга для frontend проектов Positive Technologies.
 
 ## Подключение к проекту
+Установите пакеты
+```
+yarn add -D @ptsecurity/prettier-config-new @ptsecurity/eslint-config-new @ptsecurity/stylelint-config-new
+```
+
+Настройти конфигурацию в проекте:
+
 [Настройка Eslint](packages/eslint-config/README.md)
 
 [Настройка Prettier](packages/prettier-config/README.md)
@@ -24,4 +27,5 @@ Enable
 Automatic eslint configuration;
 Run eslint --fix on save
 
-
+## Начало работы
+```lerna bootstrap```
