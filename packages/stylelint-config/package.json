@@ -1,0 +1,23 @@
+{
+    "name": "@ptsecurity/stylelint-config-new",
+    "version": "0.0.1",
+    "description": "Positive Technologies stylelint config.",
+    "scripts": {},
+    "keywords": [
+        "prettier",
+        "formatter"
+    ],
+    "author": "Positive Technologies",
+    "license": "MIT",
+    "dependencies": {
+        "prettier": "^2.2.1",
+        "stylelint": "^13.8.0",
+        "stylelint-config-prettier": "^8.0.2",
+        "stylelint-config-standard": "^20.0.0",
+        "stylelint-prettier": "^1.1.2",
+        "stylelint-scss": "^3.18.0"
+    },
+    "peerDependencies": {
+        "prettier": ">=2"
+    }
+}

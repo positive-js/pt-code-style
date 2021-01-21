@@ -1,0 +1,19 @@
+{
+  "name": "pt-linters",
+  "version": "0.0.1",
+  "description": "Positive Technologies code style rules",
+  "author": "PT Security",
+  "license": "MIT",
+  "main": "packages/eslint-config/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "stylelint",
+    "prettier"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}

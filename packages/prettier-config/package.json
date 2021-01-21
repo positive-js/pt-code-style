@@ -1,0 +1,14 @@
+{
+    "name": "@ptsecurity/prettier-config",
+    "version": "0.0.0",
+    "description": "Positive Technologies prettier config.",
+    "main": "prettier.config.js",
+    "scripts": {},
+    "keywords": [
+        "prettier",
+        "formatter"
+    ],
+    "author": "Positive Technologies",
+    "license": "MIT",
+    "devDependencies": {}
+}
