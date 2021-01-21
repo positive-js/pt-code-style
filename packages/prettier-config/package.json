@@ -1,6 +1,6 @@
 {
     "name": "@ptsecurity/prettier-config-new",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Positive Technologies prettier config.",
     "main": "prettier.config.js",
     "scripts": {},
@@ -10,5 +10,7 @@
     ],
     "author": "Positive Technologies",
     "license": "MIT",
-    "devDependencies": {}
+    "dependencies": {
+        "prettier": "^2.2.1"
+    }
 }
