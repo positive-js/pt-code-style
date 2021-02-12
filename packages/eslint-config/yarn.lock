@@ -19,6 +19,13 @@
   dependencies:
     "@babel/highlight" "^7.10.4"
 
+"@babel/code-frame@^7.12.13":
+  version "7.12.13"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/code-frame/-/code-frame-7.12.13.tgz#dcfc826beef65e75c50e21d3837d7d95798dd658"
+  integrity sha1-3PyCa+72XnXFDiHTg319lXmN1lg=
+  dependencies:
+    "@babel/highlight" "^7.12.13"
+
 "@babel/core@>=7.9.0":
   version "7.12.10"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/core/-/core-7.12.10.tgz#b79a2e1b9f70ed3d84bbfb6d8c4ef825f606bccd"
@@ -40,6 +47,15 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
+"@babel/generator@^7.10.5":
+  version "7.12.15"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/generator/-/generator-7.12.15.tgz#4617b5d0b25cc572474cc1aafee1edeaf9b5368f"
+  integrity sha1-Rhe10LJcxXJHTMGq/uHt6vm1No8=
+  dependencies:
+    "@babel/types" "^7.12.13"
+    jsesc "^2.5.1"
+    source-map "^0.5.0"
+
 "@babel/generator@^7.12.10", "@babel/generator@^7.12.11":
   version "7.12.11"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/generator/-/generator-7.12.11.tgz#98a7df7b8c358c9a37ab07a24056853016aba3af"
@@ -48,6 +64,15 @@
     "@babel/types" "^7.12.11"
     jsesc "^2.5.1"
     source-map "^0.5.0"
+
+"@babel/helper-function-name@^7.10.4":
+  version "7.12.13"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/helper-function-name/-/helper-function-name-7.12.13.tgz#93ad656db3c3c2232559fd7b2c3dbdcbe0eb377a"
+  integrity sha1-k61lbbPDwiMlWf17LD29y+DrN3o=
+  dependencies:
+    "@babel/helper-get-function-arity" "^7.12.13"
+    "@babel/template" "^7.12.13"
+    "@babel/types" "^7.12.13"
 
 "@babel/helper-function-name@^7.12.11":
   version "7.12.11"
@@ -64,6 +89,13 @@
   integrity sha1-sViBejFltfqiBHgl36YZcN3MFs8=
   dependencies:
     "@babel/types" "^7.12.10"
+
+"@babel/helper-get-function-arity@^7.12.13":
+  version "7.12.13"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/helper-get-function-arity/-/helper-get-function-arity-7.12.13.tgz#bc63451d403a3b3082b97e1d8b3fe5bd4091e583"
+  integrity sha1-vGNFHUA6OzCCuX4diz/lvUCR5YM=
+  dependencies:
+    "@babel/types" "^7.12.13"
 
 "@babel/helper-member-expression-to-functions@^7.12.7":
   version "7.12.7"
@@ -118,6 +150,13 @@
   dependencies:
     "@babel/types" "^7.12.1"
 
+"@babel/helper-split-export-declaration@^7.10.4":
+  version "7.12.13"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.12.13.tgz#e9430be00baf3e88b0e13e6f9d4eaf2136372b05"
+  integrity sha1-6UML4AuvPoiw4T5vnU6vITY3KwU=
+  dependencies:
+    "@babel/types" "^7.12.13"
+
 "@babel/helper-split-export-declaration@^7.11.0", "@babel/helper-split-export-declaration@^7.12.11":
   version "7.12.11"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.12.11.tgz#1b4cc424458643c47d37022223da33d76ea4603a"
@@ -148,10 +187,29 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@babel/highlight@^7.12.13":
+  version "7.12.13"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/highlight/-/highlight-7.12.13.tgz#8ab538393e00370b26271b01fa08f7f27f2e795c"
+  integrity sha1-irU4OT4ANwsmJxsB+gj38n8ueVw=
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.12.11"
+    chalk "^2.0.0"
+    js-tokens "^4.0.0"
+
+"@babel/parser@^7.10.5", "@babel/parser@^7.12.13":
+  version "7.12.16"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/parser/-/parser-7.12.16.tgz#cc31257419d2c3189d394081635703f549fc1ed4"
+  integrity sha1-zDEldBnSwxidOUCBY1cD9Un8HtQ=
+
 "@babel/parser@^7.12.10", "@babel/parser@^7.12.11", "@babel/parser@^7.12.7":
   version "7.12.11"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/parser/-/parser-7.12.11.tgz#9ce3595bcd74bc5c466905e86c535b8b25011e79"
   integrity sha1-nONZW810vFxGaQXobFNbiyUBHnk=
+
+"@babel/parser@~7.10.3":
+  version "7.10.5"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/parser/-/parser-7.10.5.tgz#e7c6bf5a7deff957cec9f04b551e2762909d826b"
+  integrity sha1-58a/Wn3v+VfOyfBLVR4nYpCdgms=
 
 "@babel/template@^7.10.4", "@babel/template@^7.12.7":
   version "7.12.7"
@@ -161,6 +219,15 @@
     "@babel/code-frame" "^7.10.4"
     "@babel/parser" "^7.12.7"
     "@babel/types" "^7.12.7"
+
+"@babel/template@^7.12.13":
+  version "7.12.13"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/template/-/template-7.12.13.tgz#530265be8a2589dbb37523844c5bcb55947fb327"
+  integrity sha1-UwJlvooliduzdSOETFvLVZR/syc=
+  dependencies:
+    "@babel/code-frame" "^7.12.13"
+    "@babel/parser" "^7.12.13"
+    "@babel/types" "^7.12.13"
 
 "@babel/traverse@^7.12.1", "@babel/traverse@^7.12.10", "@babel/traverse@^7.12.5":
   version "7.12.12"
@@ -177,12 +244,45 @@
     globals "^11.1.0"
     lodash "^4.17.19"
 
+"@babel/traverse@~7.10.3":
+  version "7.10.5"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/traverse/-/traverse-7.10.5.tgz#77ce464f5b258be265af618d8fddf0536f20b564"
+  integrity sha1-d85GT1sli+Jlr2GNj93wU28gtWQ=
+  dependencies:
+    "@babel/code-frame" "^7.10.4"
+    "@babel/generator" "^7.10.5"
+    "@babel/helper-function-name" "^7.10.4"
+    "@babel/helper-split-export-declaration" "^7.10.4"
+    "@babel/parser" "^7.10.5"
+    "@babel/types" "^7.10.5"
+    debug "^4.1.0"
+    globals "^11.1.0"
+    lodash "^4.17.19"
+
+"@babel/types@^7.10.5", "@babel/types@^7.12.13":
+  version "7.12.13"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/types/-/types-7.12.13.tgz#8be1aa8f2c876da11a9cf650c0ecf656913ad611"
+  integrity sha1-i+GqjyyHbaEanPZQwOz2VpE61hE=
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.12.11"
+    lodash "^4.17.19"
+    to-fast-properties "^2.0.0"
+
 "@babel/types@^7.12.1", "@babel/types@^7.12.10", "@babel/types@^7.12.11", "@babel/types@^7.12.12", "@babel/types@^7.12.5", "@babel/types@^7.12.7":
   version "7.12.12"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/types/-/types-7.12.12.tgz#4608a6ec313abbd87afa55004d373ad04a96c299"
   integrity sha1-Rgim7DE6u9h6+lUATTc60EqWwpk=
   dependencies:
     "@babel/helper-validator-identifier" "^7.12.11"
+    lodash "^4.17.19"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@~7.10.3":
+  version "7.10.5"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@babel/types/-/types-7.10.5.tgz#d88ae7e2fde86bfbfe851d4d81afa70a997b5d15"
+  integrity sha1-2Irn4v3oa/v+hR1Nga+nCpl7XRU=
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.10.4"
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
@@ -282,6 +382,18 @@
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha1-nAiGeYdvN061mD8VDUeHqm+zLX4=
 
+"@types/yargs-parser@*":
+  version "20.2.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@types/yargs-parser/-/yargs-parser-20.2.0.tgz#dd3e6699ba3237f0348cd085e4698780204842f9"
+  integrity sha1-3T5mmboyN/A0jNCF5GmHgCBIQvk=
+
+"@types/yargs@^15.0.5":
+  version "15.0.13"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@types/yargs/-/yargs-15.0.13.tgz#34f7fec8b389d7f3c1fd08026a5763e072d3c6dc"
+  integrity sha1-NPf+yLOJ1/PB/QgCaldj4HLTxtw=
+  dependencies:
+    "@types/yargs-parser" "*"
+
 "@typescript-eslint/eslint-plugin@4.3.0":
   version "4.3.0"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.3.0.tgz#1a23d904bf8ea248d09dc3761af530d90f39c8fa"
@@ -307,6 +419,18 @@
     eslint-scope "^5.0.0"
     eslint-utils "^2.0.0"
 
+"@typescript-eslint/experimental-utils@^4.0.0":
+  version "4.15.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@typescript-eslint/experimental-utils/-/experimental-utils-4.15.0.tgz#b87c36410a9b23f637689427be85007a2ec1a9c6"
+  integrity sha1-uHw2QQqbI/Y3aJQnvoUAei7BqcY=
+  dependencies:
+    "@types/json-schema" "^7.0.3"
+    "@typescript-eslint/scope-manager" "4.15.0"
+    "@typescript-eslint/types" "4.15.0"
+    "@typescript-eslint/typescript-estree" "4.15.0"
+    eslint-scope "^5.0.0"
+    eslint-utils "^2.0.0"
+
 "@typescript-eslint/parser@4.3.0":
   version "4.3.0"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@typescript-eslint/parser/-/parser-4.3.0.tgz#684fc0be6551a2bfcb253991eec3c786a8c063a3"
@@ -317,6 +441,14 @@
     "@typescript-eslint/typescript-estree" "4.3.0"
     debug "^4.1.1"
 
+"@typescript-eslint/scope-manager@4.15.0":
+  version "4.15.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@typescript-eslint/scope-manager/-/scope-manager-4.15.0.tgz#c42703558ea6daaaba51a9c3a86f2902dbab9432"
+  integrity sha1-xCcDVY6m2qq6UanDqG8pAturlDI=
+  dependencies:
+    "@typescript-eslint/types" "4.15.0"
+    "@typescript-eslint/visitor-keys" "4.15.0"
+
 "@typescript-eslint/scope-manager@4.3.0":
   version "4.3.0"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@typescript-eslint/scope-manager/-/scope-manager-4.3.0.tgz#c743227e087545968080d2362cfb1273842cb6a7"
@@ -325,10 +457,28 @@
     "@typescript-eslint/types" "4.3.0"
     "@typescript-eslint/visitor-keys" "4.3.0"
 
+"@typescript-eslint/types@4.15.0":
+  version "4.15.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@typescript-eslint/types/-/types-4.15.0.tgz#3011ae1ac3299bb9a5ac56bdd297cccf679d3662"
+  integrity sha1-MBGuGsMpm7mlrFa90pfMz2edNmI=
+
 "@typescript-eslint/types@4.3.0":
   version "4.3.0"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@typescript-eslint/types/-/types-4.3.0.tgz#1f0b2d5e140543e2614f06d48fb3ae95193c6ddf"
   integrity sha1-HwstXhQFQ+JhTwbUj7OulRk8bd8=
+
+"@typescript-eslint/typescript-estree@4.15.0":
+  version "4.15.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@typescript-eslint/typescript-estree/-/typescript-estree-4.15.0.tgz#402c86a7d2111c1f7a2513022f22a38a395b7f93"
+  integrity sha1-QCyGp9IRHB96JRMCLyKjijlbf5M=
+  dependencies:
+    "@typescript-eslint/types" "4.15.0"
+    "@typescript-eslint/visitor-keys" "4.15.0"
+    debug "^4.1.1"
+    globby "^11.0.1"
+    is-glob "^4.0.1"
+    semver "^7.3.2"
+    tsutils "^3.17.1"
 
 "@typescript-eslint/typescript-estree@4.3.0":
   version "4.3.0"
@@ -343,6 +493,14 @@
     lodash "^4.17.15"
     semver "^7.3.2"
     tsutils "^3.17.1"
+
+"@typescript-eslint/visitor-keys@4.15.0":
+  version "4.15.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@typescript-eslint/visitor-keys/-/visitor-keys-4.15.0.tgz#2a07768df30c8a5673f1bce406338a07fdec38ca"
+  integrity sha1-Kgd2jfMMilZz8bzkBjOKB/3sOMo=
+  dependencies:
+    "@typescript-eslint/types" "4.15.0"
+    eslint-visitor-keys "^2.0.0"
 
 "@typescript-eslint/visitor-keys@4.3.0":
   version "4.3.0"
@@ -501,6 +659,15 @@ balanced-match@^1.0.0:
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
+bent@~7.3.6:
+  version "7.3.12"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/bent/-/bent-7.3.12.tgz#e0a2775d4425e7674c64b78b242af4f49da6b035"
+  integrity sha1-4KJ3XUQl52dMZLeLJCr09J2msDU=
+  dependencies:
+    bytesish "^0.4.1"
+    caseless "~0.12.0"
+    is-stream "^2.0.0"
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -527,6 +694,11 @@ browserslist@^4.12.0, browserslist@^4.12.2:
     escalade "^3.1.1"
     node-releases "^1.1.69"
 
+bytesish@^0.4.1:
+  version "0.4.4"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/bytesish/-/bytesish-0.4.4.tgz#f3b535a0f1153747427aee27256748cff92347e6"
+  integrity sha1-87U1oPEVN0dCeu4nJWdIz/kjR+Y=
+
 call-bind@^1.0.0, call-bind@^1.0.2:
   version "1.0.2"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/call-bind/-/call-bind-1.0.2.tgz#b1d4e89e688119c3c9a903ad30abb2f6a919be3c"
@@ -549,7 +721,7 @@ camelcase-keys@^6.2.2:
     map-obj "^4.0.0"
     quick-lru "^4.0.1"
 
-camelcase@^5.3.1:
+camelcase@^5.0.0, camelcase@^5.3.1:
   version "5.3.1"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha1-48mzFWnhBoEd8kL3FXJaH0xJQyA=
@@ -558,6 +730,11 @@ caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001166, caniuse-lite@^1.0.300011
   version "1.0.30001178"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/caniuse-lite/-/caniuse-lite-1.0.30001178.tgz#3ad813b2b2c7d585b0be0a2440e1e233c6eabdbc"
   integrity sha1-OtgTsrLH1YWwvgokQOHiM8bqvbw=
+
+caseless@~0.12.0:
+  version "0.12.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
+  integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
 chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
@@ -568,7 +745,7 @@ chalk@^2.0.0, chalk@^2.4.2:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@^4.0.0, chalk@^4.1.0:
+chalk@^4.0.0, chalk@^4.1.0, chalk@~4.1.0:
   version "4.1.0"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/chalk/-/chalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
   integrity sha1-ThSHCmGNni7dl92DRf2dncMVZGo=
@@ -590,6 +767,15 @@ character-reference-invalid@^1.0.0:
   version "1.1.4"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/character-reference-invalid/-/character-reference-invalid-1.1.4.tgz#083329cda0eae272ab3dbbf37e9a382c13af1560"
   integrity sha1-CDMpzaDq4nKrPbvzfpo4LBOvFWA=
+
+cliui@^6.0.0:
+  version "6.0.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/cliui/-/cliui-6.0.0.tgz#511d702c0c4e41ca156d7d0e96021f23e13225b1"
+  integrity sha1-UR1wLAxOQcoVbX0OlgIfI+EyJbE=
+  dependencies:
+    string-width "^4.2.0"
+    strip-ansi "^6.0.0"
+    wrap-ansi "^6.2.0"
 
 clone-regexp@^2.1.0:
   version "2.2.0"
@@ -656,6 +842,11 @@ comment-parser@^0.7.6:
   version "0.7.6"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/comment-parser/-/comment-parser-0.7.6.tgz#0e743a53c8e646c899a1323db31f6cd337b10f12"
   integrity sha1-DnQ6U8jmRsiZoTI9sx9s0zexDxI=
+
+common-tags@^1.8.0:
+  version "1.8.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/common-tags/-/common-tags-1.8.0.tgz#8e3153e542d4a39e9b10554434afaaf98956a937"
+  integrity sha1-jjFT5ULUo56bEFVENK+q+YlWqTc=
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -750,6 +941,11 @@ decamelize@^1.1.0, decamelize@^1.2.0:
   version "1.2.0"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
+
+decamelize@^5.0.0:
+  version "5.0.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/decamelize/-/decamelize-5.0.0.tgz#88358157b010ef133febfd27c18994bd80c6215b"
+  integrity sha1-iDWBV7AQ7xM/6/0nwYmUvYDGIVs=
 
 deep-is@^0.1.3:
   version "0.1.3"
@@ -896,6 +1092,15 @@ eslint-config-prettier@^7.1.0:
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/eslint-config-prettier/-/eslint-config-prettier-7.2.0.tgz#f4a4bd2832e810e8cc7c1411ec85b3e85c0c53f9"
   integrity sha1-9KS9KDLoEOjMfBQR7IWz6FwMU/k=
 
+eslint-etc@^4.0.0:
+  version "4.0.1"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/eslint-etc/-/eslint-etc-4.0.1.tgz#2ccb5901326757ae9f7c13c671457390b9712f00"
+  integrity sha1-LMtZATJnV66ffBPGcUVzkLlxLwA=
+  dependencies:
+    "@typescript-eslint/experimental-utils" "^4.0.0"
+    tsutils "^3.17.1"
+    tsutils-etc "^1.2.2"
+
 eslint-import-resolver-node@^0.3.4:
   version "0.3.4"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.4.tgz#85ffa81942c25012d8231096ddf679c03042c717"
@@ -969,6 +1174,21 @@ eslint-plugin-prettier@^3.3.1:
   integrity sha1-cHnPoklweJBQEeb4Lo3YRT0Tcbc=
   dependencies:
     prettier-linter-helpers "^1.0.0"
+
+eslint-plugin-rxjs@^3.0.1:
+  version "3.0.1"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/eslint-plugin-rxjs/-/eslint-plugin-rxjs-3.0.1.tgz#0739aa27a2961dd62d7e15d6f5ee9b482319859b"
+  integrity sha1-BzmqJ6KWHdYtfhXW9e6bSCMZhZs=
+  dependencies:
+    "@typescript-eslint/experimental-utils" "^4.0.0"
+    common-tags "^1.8.0"
+    decamelize "^5.0.0"
+    eslint-etc "^4.0.0"
+    requireindex "~1.2.0"
+    rxjs-report-usage "^1.0.4"
+    tslib "^2.0.0"
+    tsutils "^3.0.0"
+    tsutils-etc "^1.0.0"
 
 eslint-scope@^5.0.0, eslint-scope@^5.1.1:
   version "5.1.1"
@@ -1204,6 +1424,11 @@ gensync@^1.0.0-beta.1:
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/gensync/-/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
   integrity sha1-MqbudsPX9S1GsrGuXZP+qFgKJeA=
 
+get-caller-file@^2.0.1:
+  version "2.0.5"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
+  integrity sha1-T5RBKoLbMvNuOwuXQfipf+sDH34=
+
 get-intrinsic@^1.0.1, get-intrinsic@^1.0.2:
   version "1.0.2"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/get-intrinsic/-/get-intrinsic-1.0.2.tgz#6820da226e50b24894e08859469dc68361545d49"
@@ -1225,7 +1450,7 @@ glob-parent@^5.0.0, glob-parent@^5.1.0:
   dependencies:
     is-glob "^4.0.1"
 
-glob@^7.1.3:
+glob@^7.1.3, glob@~7.1.6:
   version "7.1.6"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
   integrity sha1-FB8zuBp8JJLhJVlDB0gMRmeSeKY=
@@ -1505,6 +1730,11 @@ is-regexp@^2.0.0:
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/is-regexp/-/is-regexp-2.1.0.tgz#cd734a56864e23b956bf4e7c66c396a4c0b22c2d"
   integrity sha1-zXNKVoZOI7lWv058ZsOWpMCyLC0=
 
+is-stream@^2.0.0:
+  version "2.0.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/is-stream/-/is-stream-2.0.0.tgz#bde9c32680d6fae04129d6ac9d921ce7815f78e3"
+  integrity sha1-venDJoDW+uBBKdasnZIc54FfeOM=
+
 is-string@^1.0.5:
   version "1.0.5"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/is-string/-/is-string-1.0.5.tgz#40493ed198ef3ff477b8c7f92f644ec82a5cd3a6"
@@ -1593,6 +1823,11 @@ kind-of@^6.0.2, kind-of@^6.0.3:
   version "6.0.3"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha1-B8BQNKbDSfoG4k+jWqdttFgM5N0=
+
+kleur@^3.0.3:
+  version "3.0.3"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
+  integrity sha1-p5yezIbuHOP6YgbRIWxQHxR/wH4=
 
 known-css-properties@^0.20.0:
   version "0.20.0"
@@ -2103,6 +2338,14 @@ progress@^2.0.0:
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha1-foz42PW48jnBvGi+tOt4Vn1XLvg=
 
+prompts@~2.3.2:
+  version "2.3.2"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/prompts/-/prompts-2.3.2.tgz#480572d89ecf39566d2bd3fe2c9fccb7c4c0b068"
+  integrity sha1-SAVy2J7POVZtK9P+LJ/Mt8TAsGg=
+  dependencies:
+    kleur "^3.0.3"
+    sisteransi "^1.0.4"
+
 punycode@^2.1.0:
   version "2.1.1"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
@@ -2204,10 +2447,25 @@ repeat-string@^1.0.0:
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/repeat-string/-/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
   integrity sha1-jcrkcOHIirwtYA//Sndihtp15jc=
 
+require-directory@^2.1.1:
+  version "2.1.1"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
+  integrity sha1-jGStX9MNqxyXbiNE/+f3kqam30I=
+
 require-from-string@^2.0.2:
   version "2.0.2"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/require-from-string/-/require-from-string-2.0.2.tgz#89a7fdd938261267318eafe14f9c32e598c36909"
   integrity sha1-iaf92TgmEmcxjq/hT5wy5ZjDaQk=
+
+require-main-filename@^2.0.0:
+  version "2.0.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/require-main-filename/-/require-main-filename-2.0.0.tgz#d0b329ecc7cc0f61649f62215be69af54aa8989b"
+  integrity sha1-0LMp7MfMD2Fkn2IhW+aa9UqomJs=
+
+requireindex@~1.2.0:
+  version "1.2.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/requireindex/-/requireindex-1.2.0.tgz#3463cdb22ee151902635aa6c9535d4de9c2ef1ef"
+  integrity sha1-NGPNsi7hUZAmNapslTXU3pwu8e8=
 
 resolve-from@^4.0.0:
   version "4.0.0"
@@ -2243,6 +2501,19 @@ run-parallel@^1.1.9:
   version "1.1.10"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/run-parallel/-/run-parallel-1.1.10.tgz#60a51b2ae836636c81377df16cb107351bcd13ef"
   integrity sha1-YKUbKug2Y2yBN33xbLEHNRvNE+8=
+
+rxjs-report-usage@^1.0.4:
+  version "1.0.5"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/rxjs-report-usage/-/rxjs-report-usage-1.0.5.tgz#8de220b385f3f65a163e75cfcc2566b1545c9b3d"
+  integrity sha1-jeIgs4Xz9loWPnXPzCVmsVRcmz0=
+  dependencies:
+    "@babel/parser" "~7.10.3"
+    "@babel/traverse" "~7.10.3"
+    "@babel/types" "~7.10.3"
+    bent "~7.3.6"
+    chalk "~4.1.0"
+    glob "~7.1.6"
+    prompts "~2.3.2"
 
 rxjs@^6.5.3:
   version "6.6.3"
@@ -2285,6 +2556,11 @@ semver@^7.2.1, semver@^7.3.2:
   dependencies:
     lru-cache "^6.0.0"
 
+set-blocking@^2.0.0:
+  version "2.0.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
+  integrity sha1-BF+XgtARrppoA93TgrJDkrPYkPc=
+
 shebang-command@^2.0.0:
   version "2.0.0"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/shebang-command/-/shebang-command-2.0.0.tgz#ccd0af4f8835fbdc265b82461aaf0c36663f34ea"
@@ -2301,6 +2577,11 @@ signal-exit@^3.0.2:
   version "3.0.3"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha1-oUEMLt2PB3sItOJTyOrPyvBXRhw=
+
+sisteransi@^1.0.4:
+  version "1.0.5"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
+  integrity sha1-E01oEpd1ZDfMBcoBNw06elcQde0=
 
 slash@^3.0.0:
   version "3.0.0"
@@ -2367,7 +2648,7 @@ sprintf-js@~1.0.2:
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-string-width@^4.2.0:
+string-width@^4.1.0, string-width@^4.2.0:
   version "4.2.0"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/string-width/-/string-width-4.2.0.tgz#952182c46cc7b2c313d1596e623992bd163b72b5"
   integrity sha1-lSGCxGzHssMT0VluYjmSvRY7crU=
@@ -2607,6 +2888,26 @@ tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0:
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
 
+tslib@^2.0.0:
+  version "2.1.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+  integrity sha1-2mCGDxwuyqVwOrfTm8Bba/mIuXo=
+
+tsutils-etc@^1.0.0, tsutils-etc@^1.2.2:
+  version "1.3.2"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/tsutils-etc/-/tsutils-etc-1.3.2.tgz#a4e05600f73f540c8f081654dc19802c7cb50d49"
+  integrity sha1-pOBWAPc/VAyPCBZU3BmALHy1DUk=
+  dependencies:
+    "@types/yargs" "^15.0.5"
+    yargs "^15.4.1"
+
+tsutils@^3.0.0:
+  version "3.20.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/tsutils/-/tsutils-3.20.0.tgz#ea03ea45462e146b53d70ce0893de453ff24f698"
+  integrity sha1-6gPqRUYuFGtT1wzgiT3kU/8k9pg=
+  dependencies:
+    tslib "^1.8.1"
+
 tsutils@^3.17.1:
   version "3.19.1"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/tsutils/-/tsutils-3.19.1.tgz#d8566e0c51c82f32f9c25a4d367cd62409a547a9"
@@ -2727,6 +3028,11 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
+which-module@^2.0.0:
+  version "2.0.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/which-module/-/which-module-2.0.0.tgz#d9ef07dce77b9902b8a3a8fa4b31c3e3f7e6e87a"
+  integrity sha1-2e8H3Od7mQK4o6j6SzHD4/fm6Ho=
+
 which@^1.3.1:
   version "1.3.1"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/which/-/which-1.3.1.tgz#a45043d54f5805316da8d62f9f50918d3da70b0a"
@@ -2746,6 +3052,15 @@ word-wrap@^1.2.3:
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
   integrity sha1-YQY29rH3A4kb00dxzLF/uTtHB5w=
 
+wrap-ansi@^6.2.0:
+  version "6.2.0"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/wrap-ansi/-/wrap-ansi-6.2.0.tgz#e9393ba07102e6c91a3b221478f0257cd2856e53"
+  integrity sha1-6Tk7oHEC5skaOyIUePAlfNKFblM=
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
 wrappy@1:
   version "1.0.2"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
@@ -2761,6 +3076,11 @@ write-file-atomic@^3.0.3:
     signal-exit "^3.0.2"
     typedarray-to-buffer "^3.1.5"
 
+y18n@^4.0.0:
+  version "4.0.1"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/y18n/-/y18n-4.0.1.tgz#8db2b83c31c5d75099bb890b23f3094891e247d4"
+  integrity sha1-jbK4PDHF11CZu4kLI/MJSJHiR9Q=
+
 yallist@^4.0.0:
   version "4.0.0"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
@@ -2771,10 +3091,35 @@ yaml@^1.10.0:
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/yaml/-/yaml-1.10.0.tgz#3b593add944876077d4d683fee01081bd9fff31e"
   integrity sha1-O1k63ZRIdgd9TWg/7gEIG9n/8x4=
 
+yargs-parser@^18.1.2:
+  version "18.1.3"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/yargs-parser/-/yargs-parser-18.1.3.tgz#be68c4975c6b2abf469236b0c870362fab09a7b0"
+  integrity sha1-vmjEl1xrKr9GkjawyHA2L6sJp7A=
+  dependencies:
+    camelcase "^5.0.0"
+    decamelize "^1.2.0"
+
 yargs-parser@^20.2.3:
   version "20.2.4"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/yargs-parser/-/yargs-parser-20.2.4.tgz#b42890f14566796f85ae8e3a25290d205f154a54"
   integrity sha1-tCiQ8UVmeW+Fro46JSkNIF8VSlQ=
+
+yargs@^15.4.1:
+  version "15.4.1"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/yargs/-/yargs-15.4.1.tgz#0d87a16de01aee9d8bec2bfbf74f67851730f4f8"
+  integrity sha1-DYehbeAa7p2L7Cv7909nhRcw9Pg=
+  dependencies:
+    cliui "^6.0.0"
+    decamelize "^1.2.0"
+    find-up "^4.1.0"
+    get-caller-file "^2.0.1"
+    require-directory "^2.1.1"
+    require-main-filename "^2.0.0"
+    set-blocking "^2.0.0"
+    string-width "^4.2.0"
+    which-module "^2.0.0"
+    y18n "^4.0.0"
+    yargs-parser "^18.1.2"
 
 zone.js@~0.10.3:
   version "0.10.3"

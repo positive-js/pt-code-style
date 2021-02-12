@@ -8,7 +8,7 @@
 yarn add -D @ptsecurity/prettier-config-new @ptsecurity/eslint-config-new @ptsecurity/stylelint-config-new
 ```
 
-Настройти конфигурацию в проекте:
+Настройте конфигурацию в проекте:
 
 [Настройка Eslint](packages/eslint-config/README.md)
 
