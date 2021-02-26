@@ -33,13 +33,16 @@ module.exports = {
                 "@typescript-eslint/eslint-plugin"
             ],
             extends: [
+                'eslint:recommended',
+                'plugin:@typescript-eslint/recommended',
                 "plugin:rxjs/recommended",
                 'plugin:@angular-eslint/ng-cli-compat',
+                "plugin:@angular-eslint/recommended",
                 'plugin:@angular-eslint/template/process-inline-templates',
-                'plugin:compat/recommended',
-                'plugin:import/errors',
-                'plugin:import/warnings',
-                'plugin:import/typescript',
+                // 'plugin:compat/recommended',
+                // 'plugin:import/errors',
+                // 'plugin:import/warnings',
+                // 'plugin:import/typescript',
                 'prettier/@typescript-eslint',
                 'plugin:prettier/recommended'
             ],
@@ -169,7 +172,7 @@ module.exports = {
                 /*
                 * Новые правила
                 * */
-
+                // typescript-eslint/
                 "@typescript-eslint/ban-types": [
                     "error",
                     {
@@ -195,8 +198,12 @@ module.exports = {
                         }
                     }
                 ],
+                // стандартный конфиг: https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/all.ts
+                // есть в recommended-requiring-type-checking.
                 "@typescript-eslint/no-for-in-array": "error",
+                // есть в recommended
                 "@typescript-eslint/no-empty-interface": "error",
+                // почему?
                 "@typescript-eslint/no-unused-expressions": [
                     "error",
                     {
@@ -204,8 +211,11 @@ module.exports = {
                         "allowShortCircuit": true
                     }
                 ],
+                // есть в стандартном
                 "@typescript-eslint/no-unnecessary-type-assertion": "error",
+                // есть в стандартном
                 "@typescript-eslint/no-unnecessary-qualifier": "error",
+                // есть в стандартном
                 "@typescript-eslint/prefer-literal-enum-member": "error", // enum Valid { B = 'TestStr', вместо  enum Valid { A = str,
                 "max-len": [
                     "error",
@@ -220,16 +230,27 @@ module.exports = {
                         "allow": ["done", "resolve", "reject"]
                     }
                 ],
+                // eslint:recommended
                 "no-sparse-arrays": "error", // запрещает var items = [,,];
+                // Зачем?
                 "no-template-curly-in-string": "error",
+                // +
                 "no-throw-literal": "error",
+                // +
                 "no-undef-init": "error",
+                // eslint:recommended
                 "no-unsafe-finally": "error",
+                // +
                 "no-void": "error",
+                // +
                 "no-var": "error",
+                // +
                 "no-eval": "error",
+                // + можно добавить 2 ( * 2 часто используется)
                 "no-magic-numbers": ["error", { "ignore": [-1, 0, 1], "ignoreDefaultValues": true }],
+                // +
                 "no-return-await": "error",
+                // почему столько исключений?
                 "no-console": [
                     "error",
                     {
@@ -258,8 +279,11 @@ module.exports = {
                         ]
                     }
                 ],
+                // eslint:recommended
                 "no-duplicate-case": "error",
+                // +
                 "no-duplicate-imports": "error",
+
                 "object-shorthand": "error", // w() {}, вместо w: function() {}
                 "prefer-template": "error",
                 "prefer-object-spread": "error", // Object.assign(...foo); вместо Object.assign({}, foo)

@@ -35,7 +35,7 @@ true,
 "no-unnecessary-bind": true,
 "no-unnecessary-callback-wrapper": true,
 "no-unnecessary-local-variable": true,
-"no-unnecessary-override": true,
+    "no-unnecessary-override": true,
 "no-useless-files": true,
 
 TODO: проверить правила ниже 

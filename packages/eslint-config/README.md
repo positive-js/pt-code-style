@@ -7,3 +7,6 @@ module.exports = {
     extends: '@ptsecurity/eslint-config-new'
 }
 ```
+
+# Описание плагинов
+    
