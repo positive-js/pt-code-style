@@ -7,6 +7,10 @@
 ```
 yarn add -D @ptsecurity/prettier-config-new @ptsecurity/eslint-config-new @ptsecurity/stylelint-config-new
 ```
+Так же надо установить дополнительные зависимости ([баг](https://youtrack.ptsecurity.com/issue/UID-738)): 
+```
+yarn add -D @angular-eslint/eslint-plugin eslint-plugin-rxjs @angular-eslint/eslint-plugin-template
+```
 
 Настройте конфигурацию в проекте:
 
