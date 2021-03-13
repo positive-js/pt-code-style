@@ -1,9 +1,6 @@
 module.exports = function (tsOverrides) {
     return {
         root: true,
-        ignorePatterns: [
-            'projects/**/*'
-        ],
         settings: {
             'import/resolver': {
                 node: {
