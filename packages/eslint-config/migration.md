@@ -71,7 +71,11 @@ member-ordering-advanced - оставлен стандартный member-orderi
 
 "no-document-domain" - "no-restricted-syntax"
 
-no-unsupported-browser-code - плагин "plugin:compat/recommended"
+"no-unsupported-browser-code" - плагин "plugin:compat/recommended"
+
+"id-match": "error", не добавлен, т.к. правило дублирует @typescript-eslint/naming-convention
+
+"prefer-array-literal": "error", заменен @typescript-eslint/array-type: ["error",{"default": "array"}],
 
 Миграция проводилась по https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/ROADMAP.md#tslint-microsoft-contrib-rules
 
@@ -85,10 +89,91 @@ no-unsupported-browser-code - плагин "plugin:compat/recommended"
 "number-literal-format": true, eslint no-floating-decimal: "error"
 "orthodox-getter-and-setter": true, аналога нет, нужно переносить кастомное правило "https://github.com/positive-js/tslint-config/blob/master/src/rules/orthodoxGetterAndSetterRule.ts"
 "possible-timing-attack": true, Правило из плагина "https://github.com/nodesecurity/eslint-plugin-security#detect-possible-timing-attacks"
-"prefer-array-literal": true, Правило из плагина "https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-array-constructor.md"
-"prefer-method-signature": true, Правило из плагина "https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/method-signature-style.md"
 "promise-must-complete": true, Правило из плагина "https://github.com/j-f1/eslint-plugin-desktop/blob/master/docs/rules/promise-must-complete.md"
 "react-iframe-missing-sandbox": true, Над правилом ведется работа здесь "https://github.com/yannickcr/eslint-plugin-react/pull/2753/commits/30a29853cefed9abc38258f353306d09d678f26e"
 "switch-final-break": true, Над правилом ведется работа здесь: "https://github.com/eslint/eslint/pull/12094"
 }
 ```
+
+# Правила, не внесенные в index.js из-за их наличия в подключенных конфигах:
+
+Стандартный конфиг
+https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/all.ts
+
+```json
+{
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
+    "@typescript-eslint/no-unnecessary-qualifier": "error",
+    "@typescript-eslint/prefer-literal-enum-member": "error",
+    "@typescript-eslint/array-type": "error",
+    "@typescript-eslint/prefer-for-of": "error",
+    "@typescript-eslint/prefer-function-type": "error",
+    "@typescript-eslint/unified-signatures": "error",
+    "@typescript-eslint/no-unnecessary-type-arguments": "error",
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
+    "@typescript-eslint/explicit-member-accessibility": "error",
+    "@typescript-eslint/consistent-type-definitions": "error",
+    "@typescript-eslint/method-signature-style": "error"
+}
+```
+
+eslint:recommended
+
+```json
+{
+    "no-sparse-arrays": "error",
+    "no-unsafe-finally": "error",
+    "no-duplicate-case": "error",
+    "no-unused-labels": "error",
+    "no-cond-assign": "error",
+    "no-constant-condition": "error",
+    "no-control-regex": "error",
+    "no-debugger": "error",
+    "no-empty": "error",
+    "no-fallthrough": "error",
+    "no-invalid-regexp": "error",
+    "no-octal": "error",
+    "no-redeclare": "error",
+}
+```
+
+@typescript-eslint/recommended
+https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/recommended.ts
+
+```json
+{
+    "@typescript-eslint/no-empty-interface": "error",
+    "@typescript-eslint/adjacent-overload-signatures": "error",
+    "@typescript-eslint/no-misused-new": "error",
+    "@typescript-eslint/no-namespace": "error",
+    "@typescript-eslint/no-this-alias": "error",
+    "@typescript-eslint/no-var-requires": "error",
+    "@typescript-eslint/prefer-namespace-keyword": "error",
+    "@typescript-eslint/ban-types": [
+        "error",
+        {
+            "types": {
+                "Object": {
+                    "message": "Avoid using the `Object` type. Did you mean `object`?"
+                },
+                "Function": {
+                    "message": "Avoid using the `Function` type. Prefer a specific function type, like `() => void`."
+                },
+                "Boolean": {
+                    "message": "Avoid using the `Boolean` type. Did you mean `boolean`?"
+                },
+                "Number": {
+                    "message": "Avoid using the `Number` type. Did you mean `number`?"
+                },
+                "String": {
+                    "message": "Avoid using the `String` type. Did you mean `string`?"
+                },
+                "Symbol": {
+                    "message": "Avoid using the `Symbol` type. Did you mean `symbol`?"
+                }
+            }
+        }
+    ],
+}
+```
+
