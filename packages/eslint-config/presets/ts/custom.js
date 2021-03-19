@@ -16,17 +16,21 @@ module.exports = {
                 style: 'camelCase'
             }
         ],
-        'sort-imports': [
-            'error',
-            {
-                allowSeparatedGroups: true,
-
-            }
-        ],
         'import/order': [
             'error',
             {
-                'newlines-between': 'always'
+                'newlines-between': 'always',
+                "pathGroups": [
+                    {
+                        "pattern": "~*",
+                        "group": "external",
+                    },
+                    {
+                        "pattern": "~**/**",
+                        "group": "external"
+                    },
+
+                ]
             }
         ],
         'max-lines-per-function': [
@@ -39,12 +43,12 @@ module.exports = {
                 selector: 'default',
                 format: ['camelCase'],
                 leadingUnderscore: 'forbid',
-                trailingUnderscore: 'forbid',
+                trailingUnderscore: 'forbid'
             },
 
             {
                 selector: 'variable',
-                format: ['camelCase', 'UPPER_CASE'],
+                format: ['camelCase', 'UPPER_CASE']
             },
             {
                 selector: 'function',
@@ -54,11 +58,14 @@ module.exports = {
             },
             {
                 selector: 'typeLike',
-                format: ['StrictPascalCase'],
+                format: ['StrictPascalCase']
+            },
+            {
+                selector: 'interface', format: ['StrictPascalCase'], prefix: ['I']
             },
             {
                 selector: 'enum',
-                format: ['StrictPascalCase'],
+                format: ['StrictPascalCase']
             },
             {
                 selector: 'parameter',
@@ -168,7 +175,9 @@ module.exports = {
         "max-len": [
             "error",
             {
-                "code": 120
+                "code": 120,
+                "ignorePattern": "^import\\s.+\\sfrom\\s.+;$",
+                "ignoreUrls": true
             }
         ],
         "no-shadow": [
@@ -211,7 +220,9 @@ module.exports = {
         "@typescript-eslint/await-thenable": "error",
 
         "@typescript-eslint/restrict-plus-operands": "error",
-        "@typescript-eslint/unbound-method": "error",
+        // TODO Плохо работает, правило про потерю области видимости, но на самом деле правило фолсит
+        //  и срабатывает например при передаче в метод класса переменной с this (someFn(this.someVar))
+        "@typescript-eslint/unbound-method": "off",
 
         // В стандартном есть "@typescript-eslint/array-type": "error",
         "@typescript-eslint/array-type": [
@@ -266,6 +277,8 @@ module.exports = {
                 "requireReturnForObjectLiteral": true // let foo = () => { return { bar: 0 }; };
             }
         ],
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': ['error',  {"args": "after-used"}],
 
 
         /*******************************************************************************************************
@@ -279,7 +292,6 @@ module.exports = {
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/no-parameter-properties": "off",
         "@typescript-eslint/no-require-imports": "off",
-        "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/no-use-before-define": "off",
         "@typescript-eslint/prefer-readonly": "off",
         "@typescript-eslint/promise-function-async": "off",

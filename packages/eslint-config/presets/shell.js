@@ -21,8 +21,7 @@ module.exports = function (tsOverrides) {
                 parser: '@typescript-eslint/parser',
                 parserOptions: {
                     project: [
-                        'tsconfig.json',
-                        'e2e/tsconfig.json'
+                        'tsconfig.json'
                     ],
                     createDefaultProgram: true
                 },
