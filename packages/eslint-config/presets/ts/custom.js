@@ -120,54 +120,51 @@ module.exports = {
             }
         ],
 
-        /*
-        * Новые правила
-        * */
-        // typescript-eslint/
-        "@typescript-eslint/ban-types": [
-            "error",
-            {
-                "types": {
-                    "Object": {
-                        "message": "Avoid using the `Object` type. Did you mean `object`?"
-                    },
-                    "Function": {
-                        "message": "Avoid using the `Function` type. Prefer a specific function type, like `() => void`."
-                    },
-                    "Boolean": {
-                        "message": "Avoid using the `Boolean` type. Did you mean `boolean`?"
-                    },
-                    "Number": {
-                        "message": "Avoid using the `Number` type. Did you mean `number`?"
-                    },
-                    "String": {
-                        "message": "Avoid using the `String` type. Did you mean `string`?"
-                    },
-                    "Symbol": {
-                        "message": "Avoid using the `Symbol` type. Did you mean `symbol`?"
-                    }
-                }
-            }
-        ],
-        // стандартный конфиг: https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/all.ts
-        // есть в recommended-requiring-type-checking.
+        /*******************************************************************************************************
+         * Одобренные правила
+         *******************************************************************************************************/
+
+        "no-throw-literal": "error",
+        "no-undef-init": "error",
+        "no-void": "error",
+        "no-var": "error",
+        "no-eval": "error",
+        "no-magic-numbers": ["error", { "ignore": [-1, 0, 1, 2], "ignoreDefaultValues": true }],
+        "no-return-await": "error",
+        "no-duplicate-imports": "error",
+
+        /*******************************************************************************************************
+         * Обсуждаемые правила
+         *******************************************************************************************************/
+
+        // Old: есть в recommended-requiring-type-checking.
+        // A мы где-то используем recommended-requiring-type-checking?
         "@typescript-eslint/no-for-in-array": "error",
-        // есть в recommended
-        "@typescript-eslint/no-empty-interface": "error",
-        // почему?
-        "@typescript-eslint/no-unused-expressions": [
+
+        // Old: почему?
+        // В целом правило кажется полезным, а вот { "allowShortCircuit": true, "allowTernary": true } думаю не нужны
+        "@typescript-eslint/no-unused-expressions": "error",
+
+        // Old: Зачем?
+        // Правило запрещает "Hello ${name}!"; кажется, что при наличии `Hello ${name}!`, они и не нужны.
+        // Правда это только для ECMAScript 6, но вроде у нас все проекты на Angular 10 на ECMAScript 6 и выше
+        "no-template-curly-in-string": "error",
+
+        // Old: почему столько исключений?
+        //Оставила warn и error
+        "no-console": [
             "error",
             {
-                "allowTernary": true,
-                "allowShortCircuit": true
+                "allow": [
+                    "warn",
+                    "error"
+                ]
             }
         ],
-        // есть в стандартном
-        "@typescript-eslint/no-unnecessary-type-assertion": "error",
-        // есть в стандартном
-        "@typescript-eslint/no-unnecessary-qualifier": "error",
-        // есть в стандартном
-        "@typescript-eslint/prefer-literal-enum-member": "error", // enum Valid { B = 'TestStr', вместо  enum Valid { A = str,
+
+        /*******************************************************************************************************
+         * Новые правила
+         *******************************************************************************************************/
         "max-len": [
             "error",
             {
@@ -181,59 +178,6 @@ module.exports = {
                 "allow": ["done", "resolve", "reject"]
             }
         ],
-        // eslint:recommended
-        "no-sparse-arrays": "error", // запрещает var items = [,,];
-        // Зачем?
-        "no-template-curly-in-string": "error",
-        // +
-        "no-throw-literal": "error",
-        // +
-        "no-undef-init": "error",
-        // eslint:recommended
-        "no-unsafe-finally": "error",
-        // +
-        "no-void": "error",
-        // +
-        "no-var": "error",
-        // +
-        "no-eval": "error",
-        // + можно добавить 2 ( * 2 часто используется)
-        "no-magic-numbers": ["error", { "ignore": [-1, 0, 1], "ignoreDefaultValues": true }],
-        // +
-        "no-return-await": "error",
-        // почему столько исключений?
-        "no-console": [
-            "error",
-            {
-                "allow": [
-                    "warn",
-                    "dir",
-                    "time",
-                    "timeEnd",
-                    "timeLog",
-                    "trace",
-                    "assert",
-                    "clear",
-                    "count",
-                    "countReset",
-                    "group",
-                    "groupEnd",
-                    "table",
-                    "info",
-                    "dirxml",
-                    "groupCollapsed",
-                    "Console",
-                    "profile",
-                    "profileEnd",
-                    "timeStamp",
-                    "context"
-                ]
-            }
-        ],
-        // eslint:recommended
-        "no-duplicate-case": "error",
-        // +
-        "no-duplicate-imports": "error",
 
         "object-shorthand": "error", // w() {}, вместо w: function() {}
         "prefer-template": "error",
@@ -252,11 +196,83 @@ module.exports = {
         "use-isnan": "error", // isNaN() rather then foo == NaN
         "yoda": "error", // Yoda conditions are so named because the literal value of the condition comes first while the variable comes second
 
-        /*
-        * Отключенные правила, список может приготится, если будем импортировать готовые конфиги
-        * */
+        /*******************************************************************************************************
+         * Новейшие правила
+         *******************************************************************************************************/
 
-        "@typescript-eslint/no-floating-promises": "off",
+        //в recommended-requiring-type-checking есть еще несколько наших правил:
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/recommended-requiring-type-checking.ts
+
+        /*
+        * This rule disallows awaiting a value that is not a "Thenable" (an object which has then method, such as a Promise).
+        * While it is valid JavaScript to await a non-Promise-like value (it will resolve immediately), this pattern is often a programmer error,
+        * such as forgetting to add parenthesis to call a function that returns a Promise.
+        * */
+        "@typescript-eslint/await-thenable": "error",
+
+        "@typescript-eslint/restrict-plus-operands": "error",
+        "@typescript-eslint/unbound-method": "error",
+
+        // В стандартном есть "@typescript-eslint/array-type": "error",
+        "@typescript-eslint/array-type": [
+            "error",
+            {
+                "default": "array"
+            }
+        ],
+
+        // eslint правила, отсутствуют в eslint:recommended
+
+        //запрещает foo = doSomething(), val;
+        "no-sequences": "error",// более строгий аналог: no-restricted-syntax": ["error", "SequenceExpression"]
+
+        // Запрещает var foo = "Copyright \251";, дополняет no-octal из eslint:recommended
+        "no-octal-escape": "error",
+
+        // String(someValue); вместо new String(someValue);
+        "no-new-wrappers": "error",
+
+        // Запрещает arguments.caller and arguments.callee
+        "no-caller": "error",
+
+        // var person = new Person();  вместо  var person = new Person;
+        "new-parens": "error",
+
+        //  var x = y || z; вместо var x = y | z;
+        "no-bitwise": "error",
+
+        // function foo(bar) {var baz = bar;} вместо function foo(bar) {bar = 13;}
+        "no-param-reassign": "error",
+
+        // Обязательное использование hasOwnProperty в for (key in foo) {}
+        "guard-for-in": "error",
+
+        // Необязательно, но должно улучшить читабельность код
+        "one-var": [
+            "error",
+            "never" // запрещает var bar, baz;   const bar = true, baz = false;
+        ],
+
+        // Reports use of a deprecated name, as indicated by a JSDoc block with a @deprecated tag or TomDoc Deprecated: comment.
+        "import/no-deprecated": "error",
+
+        // import _ from 'foo' вместо import 'foo'
+        "import/no-unassigned-import": "error",
+
+        "arrow-body-style": [
+            "error",
+            "as-needed", // let foo = () => 0; и let foo = () => { bar(); };
+            {
+                "requireReturnForObjectLiteral": true // let foo = () => { return { bar: 0 }; };
+            }
+        ],
+
+
+        /*******************************************************************************************************
+         * Отключенные правила, список может приготится, если будем импортировать готовые конфиги
+         *******************************************************************************************************/
+
+        "@typescript-eslint/no-floating-promises": "off", //error in recommended-requiring-type-checking
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-extraneous-class": "off",
         "@typescript-eslint/no-inferrable-types": "off",
@@ -277,85 +293,30 @@ module.exports = {
         "radix": "off",
         "valid-typeof": "off",
 
+        /*******************************************************************************************************
+         * Правила, которые будут добавлены в будущем, список еще редактируется
+         *******************************************************************************************************/
         /*
-        * Правила, которые будут добавлены в будущем, список еще редактируется
-        */
-
-        /* Необходимые для этих правил плагины
-        * "plugins": [
-            "eslint-plugin-import",
-            "eslint-plugin-jsdoc",
-            "eslint-plugin-no-null",
-            "@typescript-eslint/tslint"
-        ],*/
-        /*"no-underscore-dangle": [ // возможно заменится при переносе кастомного orthodox-getter-and-setter
+        "@typescript-eslint/member-ordering": "error", // необходимо аккуратно настроить или перенести кистомное правило
+        "no-underscore-dangle": [ // нужно перенести кастомное проавило orthodox-getter-and-setter
             "error",
             {
                 "allowAfterThis": true
             }
         ],
-        "no-unused-labels": "error",
-        "@typescript-eslint/consistent-type-definitions": "error",
-        "@typescript-eslint/member-ordering": "error", // необходимо аккуратно настроить или перенести кистомное правило
-        "guard-for-in": "error",
-        "one-var": [
-            "error",
-            "never" // запрещает var bar, baz;   const bar = true, baz = false;
-        ],*/
+        */
+
+        /*******************************************************************************************************
+         * В tslint было, но кажется не нужным:
+         *******************************************************************************************************/
         /*
-        * This rule disallows awaiting a value that is not a "Thenable" (an object which has then method, such as a Promise).
-        * While it is valid JavaScript to await a non-Promise-like value (it will resolve immediately), this pattern is often a programmer error,
-        * such as forgetting to add parenthesis to call a function that returns a Promise.
-        * */
-        /*"@typescript-eslint/await-thenable": "error",
-        "@typescript-eslint/adjacent-overload-signatures": "error",
-        "@typescript-eslint/array-type": [
-            "error",
-            {
-                "default": "array"
-            }
-        ],
-        "@typescript-eslint/explicit-member-accessibility": [
-            "error",
-            {
-                "accessibility": "no-public"
-            }
-        ],
-        "@typescript-eslint/no-misused-new": "error",
-        "@typescript-eslint/no-namespace": "error",
-        "no-param-reassign": "error",
-        "@typescript-eslint/no-this-alias": "error",
-        "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
-        "@typescript-eslint/no-unnecessary-type-arguments": "error",
-        "@typescript-eslint/no-var-requires": "error",
-        "@typescript-eslint/prefer-for-of": "error",
-        "@typescript-eslint/prefer-function-type": "error",
-        "@typescript-eslint/prefer-namespace-keyword": "error",
-        "@typescript-eslint/restrict-plus-operands": "error",
-        "@typescript-eslint/unbound-method": "error",
-        "@typescript-eslint/unified-signatures": "error",
-        "arrow-body-style": "error",
-        "id-blacklist": "error",
-        "id-match": "error",
-        "import/no-default-export": "error",
-        "import/no-deprecated": "error",
-        "import/no-unassigned-import": "error",
-        "jsdoc/no-types": "error",
-        "new-parens": "error",
-        "no-bitwise": "error",
-        "no-caller": "error",
-        "no-cond-assign": "error",
-        "no-constant-condition": "error",
-        "no-control-regex": "error",
-        "no-debugger": "error",
-        "no-empty": "error",
-        "no-fallthrough": "error",
-        "no-invalid-regexp": "error",
-        "no-new-wrappers": "error",
-        "no-octal": "error",
-        "no-octal-escape": "error",
-        "no-redeclare": "error",
-        "no-restricted-imports": "error",
-        "no-sequences": "error"*/
+            "no-restricted-imports": "error",
+
+            // В Cybsi например есть export default
+            "import/no-default-export": "error",
+
+            // Запрещает использование типов в jsdoc, например: @param {number} foo
+            "jsdoc/no-types": "error",
+        */
     }
 }
