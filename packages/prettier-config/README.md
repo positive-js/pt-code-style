@@ -2,7 +2,7 @@
 
 ## Подключение
 
-.prettirrc.js проекта должен выглядеть так:
+.prettierrc.js проекта должен выглядеть так:
 ```js
 module.exports = require('@ptsecurity/prettier-config-new');
 ```
