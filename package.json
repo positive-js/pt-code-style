@@ -4,6 +4,9 @@
     "description": "Positive Technologies code style rules",
     "author": "PT Security",
     "license": "MIT",
+    "workspaces": [
+        "packages/*"
+    ],
     "engines": {
         "node": ">=12"
     },
@@ -19,6 +22,6 @@
         "@commitlint/cli": "^11.0.0",
         "@commitlint/config-conventional": "^11.0.0",
         "@ptsecurity/commitlint-config": "^1.0.0",
-        "lerna": "^3.22.1"
+        "lerna": "^4.0.0"
     }
 }
