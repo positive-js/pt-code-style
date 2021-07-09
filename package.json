@@ -1,12 +1,14 @@
 {
-    "name": "pt-linters",
-    "version": "0.0.1",
+    "name": "@ptsecurity/code-styles",
+    "private": true,
     "description": "Positive Technologies code style rules",
     "author": "PT Security",
     "license": "MIT",
-    "main": "packages/eslint-config/index.js",
+    "engines": {
+        "node": ">=12"
+    },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "postinstall": "npx lerna bootstrap"
     },
     "keywords": [
         "eslint",
