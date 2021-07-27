@@ -3,6 +3,7 @@
     "packages": [
         "packages/*"
     ],
-    "version": "0.0.0",
-    "useWorkspaces": false
+    "lerna": "4.0.0",
+    "version": "independent",
+    "useWorkspaces": true
 }
