@@ -1,5 +1,5 @@
 {
-    "name": "@ptsecurity/stylelint-config-new",
+    "name": "@ptsecurity/stylelint-config",
     "version": "0.0.1",
     "description": "Positive Technologies stylelint config.",
     "scripts": {},
