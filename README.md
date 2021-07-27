@@ -5,11 +5,11 @@
 ## Подключение к проекту
 Установите пакеты
 ```
-yarn add -D @ptsecurity/prettier-config-new @ptsecurity/eslint-config-new @ptsecurity/stylelint-config-new
+yarn add -D @ptsecurity/prettier-config @ptsecurity/eslint-config @ptsecurity/stylelint-config
 ```
 Так же надо установить дополнительные зависимости ([баг](https://youtrack.ptsecurity.com/issue/UID-738)): 
 ```
-yarn add -D @angular-eslint/eslint-plugin eslint-plugin-rxjs @angular-eslint/eslint-plugin-template
+yarn add -D @angular-eslint/eslint-plugin eslint-plugin-rxjs @angular-eslint/eslint-plugin-template  eslint-plugin-eslint-comments
 ```
 
 Настройте конфигурацию в проекте:

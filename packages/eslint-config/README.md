@@ -4,7 +4,7 @@
 .eslintrc.js проекта должен выглядеть так:
 ```js
 module.exports = {
-    extends: '@ptsecurity/eslint-config-new'
+    extends: '@ptsecurity/eslint-config'
 }
 ```
 
