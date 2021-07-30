@@ -81,6 +81,7 @@ const writerOpts = {
 module.exports = {
 
     branches: [
+        'master',
         { name: 'release/\\w*' }
     ],
 
