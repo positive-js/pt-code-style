@@ -18,11 +18,6 @@ stages:
     - prepare-global
     - publish
 
-Prepare Env:
-    stage: prepare-global
-    extends:
-        - .prepare-env
-        - .build-servers
 
 Prepare Global:
     stage: prepare-global
@@ -36,6 +31,5 @@ Publish package release:
     stage: publish
     dependencies:
         - Prepare Global
-        - Prepare Env
     script:
         - yarn run semantic-release
