@@ -1,12 +1,4 @@
 {
-    "command": {
-        "publish": {
-            "conventionalCommits": true,
-            "message": "🔖️ (release) %s",
-            "npmClient": "yarn",
-            "forcePublish": "*"
-        }
-    },
     "packages": [
         "packages/*"
     ],

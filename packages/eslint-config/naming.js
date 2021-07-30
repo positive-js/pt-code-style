@@ -1,1 +1,1 @@
-module.exports = require("./src/naming");
+module.exports = require('./src/naming');

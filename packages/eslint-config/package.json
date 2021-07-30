@@ -1,17 +1,23 @@
 {
     "name": "@ptsecurity/eslint-config",
     "version": "0.0.0",
-    "main": "src",
+    "description": "ESLint shareable config for the Positive Technologies JavaScript style guide.",
+    "author": "Positive Technologies",
     "license": "MIT",
-    "type": "commonjs",
     "engines": {
         "node": ">=12"
     },
-    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "main": "src",
+    "type": "commonjs",
+    "keywords": [
+        "eslint",
+        "eslintconfig"
+    ],
     "scripts": {
-        "build": "tsc",
-        "clean:dist": "node ../../scripts/releasing/clean.js dist",
-        "prepare": "yarn clean:dist && yarn build"
+
     },
     "dependencies": {
         "@angular-eslint/eslint-plugin": "^12.3.1",
@@ -28,15 +34,18 @@
         "eslint-plugin-prefer-arrow": "1.2.2",
         "eslint-plugin-prettier": "^3.3.1",
         "eslint-plugin-rxjs": "^3.0.1",
+        "prettier": "^2.3.2",
         "find-up": "^5.0.0",
         "typescript": "^4.1.3"
     },
     "peerDependencies": {
-        "eslint": "^7.30.0"
+        "eslint": "^7.30.0",
+        "prettier": "^2.3.2"
     },
     "files": [
-        "dist/",
         "LICENSE",
-        "README.md"
+        "naming.js",
+        "restricted-imports.js",
+        "src"
     ]
 }

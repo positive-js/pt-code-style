@@ -1,1 +1,1 @@
-module.exports = require("./src/restricted-imports");
+module.exports = require('./src/restricted-imports');

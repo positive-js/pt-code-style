@@ -81,9 +81,7 @@ const writerOpts = {
 module.exports = {
 
     branches: [
-        {name: 'master'},
-        {name: 'release/\\w*'},
-        {name: 'feature/\\w*'},
+        { name: 'release/\\w*' }
     ],
 
     extends: ['semantic-release-commit-filter'],
