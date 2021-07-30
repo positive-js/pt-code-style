@@ -18,6 +18,12 @@ stages:
     - prepare-global
     - publish
 
+default:
+    tags:
+        - linux
+        - docker
+        - build-med
+
 
 Prepare Global:
     stage: prepare-global
