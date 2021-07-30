@@ -1,3 +1,9 @@
+dist
+.cache
+.env
+.env.*
+!.env.example
+
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs

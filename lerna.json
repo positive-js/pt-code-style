@@ -1,9 +1,17 @@
 {
-    "npmClient": "yarn",
+    "command": {
+        "publish": {
+            "conventionalCommits": true,
+            "message": "🔖️ (release) %s",
+            "npmClient": "yarn",
+            "forcePublish": "*"
+        }
+    },
     "packages": [
         "packages/*"
     ],
     "lerna": "4.0.0",
+    "npmClient": "yarn",
     "version": "independent",
     "useWorkspaces": true
 }

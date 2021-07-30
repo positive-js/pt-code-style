@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "lib": ["es2019"],
+        "module": "commonjs",
+        "target": "es2019",
+
+        "allowJs": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "strict": true
+    },
+    "exclude": [
+        "./presets"
+    ]
+}

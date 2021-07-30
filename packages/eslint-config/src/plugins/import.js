@@ -144,11 +144,27 @@ module.exports = {
 
         // Enforce a convention in module import order [autofix]
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
-        'import/order': 'warn',
+        'import/order': [
+            'warn',
+            {
+                pathGroups: [{ pattern: '*/**', group: 'internal', position: 'before' }],
+                groups: [
+                    'external',
+                    'internal',
+                    'builtin',
+                    'parent',
+                    'index',
+                    'sibling'
+                ],
+                pathGroupsExcludedImportTypes: [],
+                'newlines-between': 'always',
+                alphabetize: { order: 'asc', caseInsensitive: true },
+            }
+        ],
 
         // Enforce a newline after import statements [autofix]
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md
-        'import/newline-after-import': 'warn',
+        'import/newline-after-import': ['warn', { 'count': 1 }],
 
         // Prefer a default export if module exports a single name
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md

@@ -1,9 +1,9 @@
+const getIgnorePatterns = require('./utils/get-ignore-patterns');
+
+
 module.exports = {
-    extends: [
-        './plugins/import.js',
-        './plugins/eslint-comments.js',
-        './plugins/typescript-eslint.js'
-    ],
+
+    ignorePatterns: getIgnorePatterns(),
 
     env: {
         browser: true,
@@ -11,32 +11,42 @@ module.exports = {
         node: true,
     },
 
+    plugins: [],
+    rules: {},
+    settings: {},
+
     parserOptions: {
-        ecmaVersion: 12,
+        ecmaVersion: 2020,
         sourceType: 'module',
     },
 
     globals: {
         __DEV__: 'readonly',
         SharedArrayBuffer: 'readonly',
-    },
-
-    ignorePatterns: [
-        "!.*",
-
-        ".git/",
-        "node_modules/",
-        ".npm/",
-
-        "lib-cov/",
-        "coverage/",
-        ".nyc_output/",
-        ".cache/",
-
-        "build/",
-        "dist/",
-        "tmp/",
-
-        "**/*.min.*",
-    ]
+    }
 };
+
+
+[
+    'best-practices',
+    'deprecated',
+    'possible-errors',
+    'variables'
+].forEach((name) => {
+    const rules = require(`./core/${name}`);
+
+    Object.assign(module.exports.rules, rules);
+});
+
+[
+    'eslint-comments',
+    'import',
+    'typescript-eslint'
+].forEach((name) => {
+    const preset = require(`./plugins/${name}`);
+
+    module.exports.plugins.push(name);
+
+    Object.assign(module.exports.rules, preset.rules);
+    Object.assign(module.exports.settings, preset.settings);
+});

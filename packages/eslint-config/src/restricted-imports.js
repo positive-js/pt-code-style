@@ -1,5 +1,3 @@
-
-
 /**
  * @typedef {Object} RestrictedImport
  * @property {{name: string, message: string}[]} paths

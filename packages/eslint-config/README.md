@@ -1,5 +1,12 @@
 # Eslint config
-## Подключение
+
+## Установка
+
+```bash
+npm install eslint @ptsecurity/eslint-config --save-dev
+```
+
+## Использование
 
 .eslintrc.js проекта должен выглядеть так:
 ```js
@@ -7,6 +14,17 @@ module.exports = {
     extends: '@ptsecurity/eslint-config'
 }
 ```
+
+
+```js
+// .eslintrc.js
+module.exports = {
+    extends: [
+        '@ptsecurity/eslint-config/typescript',
+        '@ptsecurity/eslint-config/import'
+    ],
+};
+```js
 
 ## Описание
 Пакет включает в себя разные наборы пресетов конфигураций
