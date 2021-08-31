@@ -1,4 +1,4 @@
-const allowedProperties = require('./utils/allowedProperties');
+const allowedProperties = require('../utils/allowed-properties');
 
 module.exports = {
     parser: '@typescript-eslint/parser',
