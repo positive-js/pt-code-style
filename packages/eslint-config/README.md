@@ -15,25 +15,24 @@ module.exports = {
 }
 ```
 
-
+Можно подключать наборы правил, или конфигурации для плагинов отдельно
 ```js
 // .eslintrc.js
 module.exports = {
     extends: [
-        '@ptsecurity/eslint-config/typescript',
-        '@ptsecurity/eslint-config/import'
-    ],
+        '@ptsecurity/eslint-config/base',
+        '@ptsecurity/eslint-config/core/best-practices',
+        '@ptsecurity/eslint-config/plugins/typescript-eslint',
+        '@ptsecurity/eslint-config/plugins/import'
+    ]
 };
-```js
+```
 
 ## Описание
-Пакет включает в себя разные наборы пресетов конфигураций
-- base - базовый облегченный набор, сделанный для облегчения миграции tslint → eslint
-- recommended - стандартный набор правил, который используется по-умолчанию и подойдет большинству проектов
-- all - усиленный набор правил 
+Пакет содержит конфигурацию eslint, подключаемую в проект. 
 
-## Полезные ссылки
-[Описание правил typescript-eslint](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)
+Так же можно подключить частичные наборы правил (core), либо конфигурации для плагинов (plugins). 
+Для этого предварительно нужно подключить базовый конфиг (base) 
 
 ## Философия
 * Конфигурация правил должна требовать минимальных усилий, работать из коробки.
@@ -44,11 +43,20 @@ module.exports = {
 
 ## Plugins
 ### Перечень используемых плагинов
+В данный момент в конфигурацию включены следующие плагины:
+- [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)
+- [array-func](https://github.com/freaktechnik/eslint-plugin-array-func)
+- [eslint-comments](https://github.com/mysticatea/eslint-plugin-eslint-comments)
+- [import](https://github.com/import-js/eslint-plugin-import)
+- [angular-eslint](https://github.com/angular-eslint/angular-eslint)
+- [rxjs](https://www.npmjs.com/package/eslint-plugin-rxjs)
+- [prefer-arrow](https://github.com/TristonJ/eslint-plugin-prefer-arrow)
+- [prettier](https://www.npmjs.com/package/eslint-plugin-prettier)
 
-.....
+## Полезные ссылки
+Вы можете расширять стандартную конфигурацию локально плагинами, вот некоторые из них:
 
 ### Code Quality
-
 - [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 
 ### Languages
@@ -59,9 +67,6 @@ module.exports = {
 - [eslint-plugin-markdown](https://github.com/eslint/eslint-plugin-markdown)
 
 ### Library Plugins
-
-Следующие пакеты:
-
 - [eslint-plugin-fsa](https://github.com/joseph-galindo/eslint-plugin-fsa)
 - [eslint-plugin-lodash](https://github.com/wix/eslint-plugin-lodash)
 - [eslint-plugin-lodash-fp](https://github.com/jfmengels/eslint-plugin-lodash-fp)
@@ -69,7 +74,6 @@ module.exports = {
 - [eslint-plugin-redux-saga](https://github.com/pke/eslint-plugin-redux-saga)
 
 ### Practices
-
 Следующие плагины ESLint обеспечивают соблюдение часто встречающихся практик:
 
 - [eslint-plugin-array-func](https://github.com/freaktechnik/eslint-plugin-array-func)
