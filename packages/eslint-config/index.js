@@ -1,10 +1,26 @@
-const shell = require('./presets/shell');
+const baseConfig = require('./base');
+const loadCore = require('./utils/load-core');
+const loadPlugins = require('./utils/load-plugins');
 
-const tsOverrides = {
-    extends: [
-        './presets/ts/recommended',
-        './presets/ts/custom'
-    ]
-}
+module.exports = baseConfig;
 
-module.exports = shell(tsOverrides);
+loadCore(baseConfig, [
+    'best-practices',
+    'deprecated',
+    'possible-errors',
+    'variables',
+    'naming',
+    'restricted-imports'
+]);
+
+loadPlugins(baseConfig, [
+    'array-func',
+    'eslint-comments',
+    'import',
+    'typescript-eslint',
+    'angular-eslint',
+    'rxjs',
+    'prefer-arrow',
+    'prettier'
+]);
+
