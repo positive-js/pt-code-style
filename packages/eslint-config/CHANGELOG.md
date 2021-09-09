@@ -1,3 +1,11 @@
+# @ptsecurity/eslint-config [1.1.0](https://gitlab.ptsecurity.com/ui/core/pt-code-style/compare/@ptsecurity/eslint-config@1.0.0...@ptsecurity/eslint-config@1.1.0) (2021-09-09)
+
+
+### ✨  Feat
+#### Introduce new features.
+
+* UID-855 rules and fixes ([](https://gitlab.ptsecurity.com/ui/core/pt-code-style/commit/237b531))
+
 # @ptsecurity/eslint-config 1.0.0 (2021-07-30)
 
 
