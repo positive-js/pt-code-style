@@ -1,3 +1,11 @@
+## @ptsecurity/eslint-config [1.1.1](https://gitlab.ptsecurity.com/ui/core/pt-code-style/compare/@ptsecurity/eslint-config@1.1.0...@ptsecurity/eslint-config@1.1.1) (2021-09-12)
+
+
+### 🐛  Fix
+#### Fix a bug.
+
+* fix eslint build ([](https://gitlab.ptsecurity.com/ui/core/pt-code-style/commit/1468529))
+
 # @ptsecurity/eslint-config [1.1.0](https://gitlab.ptsecurity.com/ui/core/pt-code-style/compare/@ptsecurity/eslint-config@1.0.0...@ptsecurity/eslint-config@1.1.0) (2021-09-09)
 
 
