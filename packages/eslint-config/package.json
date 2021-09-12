@@ -48,6 +48,7 @@
         "core",
         "plugins",
         "utils",
-        "base.js"
+        "base.js",
+        "index.js"
     ]
 }
