@@ -1,26 +1,11 @@
 const baseConfig = require('./base');
-const loadCore = require('./utils/load-core');
-const loadPlugins = require('./utils/load-plugins');
+const typescript = require('./overrides/typesript');
+const javascript = require('./overrides/javascript');
 
-module.exports = baseConfig;
-
-loadCore(baseConfig, [
-    'best-practices',
-    'deprecated',
-    'possible-errors',
-    'variables',
-    'naming',
-    'restricted-imports'
-]);
-
-loadPlugins(baseConfig, [
-    'array-func',
-    'eslint-comments',
-    'import',
-    'typescript-eslint',
-    'angular-eslint',
-    'rxjs',
-    'prefer-arrow',
-    'prettier'
-]);
-
+module.exports = {
+    ...baseConfig,
+    overrides: [
+        typescript,
+        javascript
+    ]
+};
