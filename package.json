@@ -48,8 +48,23 @@
         "semantic-release": "^17.4.4",
         "semantic-release-commit-filter": "^1.0.2"
     },
-    "dependencies": {
-        "eslint": "^7.32.0"
+    "peerDependencies": {
+        "@angular-eslint/builder": "^4.3.0",
+        "@angular-eslint/eslint-plugin": "^12.5.0",
+        "@angular-eslint/eslint-plugin-template": "^12.5.0",
+        "@ptsecurity/eslint-config": "^1.2.0",
+        "@ptsecurity/prettier-config": "^1.2.0",
+        "@ptsecurity/stylelint-config": "^1.2.0",
+        "eslint": "^7.32.0",
+        "eslint-import-resolver-typescript": "^2.5.0",
+        "eslint-plugin-array-func": "^3.1.7",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "eslint-plugin-rxjs": "^3.3.7",
+        "prettier": "^2.2.1",
+        "stylelint": "^13.13.1",
+        "eslint-plugin-prettier": "^4.0.0",
+        "stylelint-order": "^4.1.0",
+        "stylelint-prettier": "^1.2.0"
     },
     "version": "0.0.0"
 }
