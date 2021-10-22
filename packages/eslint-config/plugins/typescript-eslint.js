@@ -64,7 +64,6 @@ module.exports = {
                 selector: 'class',
                 modifiers: ['abstract'],
                 format: ['StrictPascalCase'],
-                prefix: ['Abstract']
             },
             { selector: 'method', format: ['camelCase'] },
             { selector: 'accessor', format: ['camelCase'] },

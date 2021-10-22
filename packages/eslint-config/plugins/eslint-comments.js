@@ -6,5 +6,7 @@ module.exports = {
     extends: ['plugin:eslint-comments/recommended'],
 
     // https://mysticatea.github.io/eslint-plugin-eslint-comments/rules/
-    rules: {}
+    rules: {
+        'eslint-comments/disable-enable-pair': 'off'
+    }
 };
