@@ -1,3 +1,11 @@
+## @ptsecurity/stylelint-config [1.2.1](https://gitlab.ptsecurity.com/ui/core/pt-code-style/compare/@ptsecurity/stylelint-config@1.2.0...@ptsecurity/stylelint-config@1.2.1) (2021-10-24)
+
+
+### 🐛  Fix
+#### Fix a bug.
+
+* Обновлены правила ([](https://gitlab.ptsecurity.com/ui/core/pt-code-style/commit/2289653))
+
 # @ptsecurity/stylelint-config [1.2.0](https://gitlab.ptsecurity.com/ui/core/pt-code-style/compare/@ptsecurity/stylelint-config@1.1.1...@ptsecurity/stylelint-config@1.2.0) (2021-09-13)
 
 
