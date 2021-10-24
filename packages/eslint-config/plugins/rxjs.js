@@ -6,6 +6,7 @@ module.exports = {
         'plugin:rxjs/recommended'
     ],
     rules: {
-        'rxjs/no-implicit-any-catch': 'warn'
+        'rxjs/no-implicit-any-catch': 'warn',
+        'rxjs/no-unbound-methods': 'warn'
     }
 }

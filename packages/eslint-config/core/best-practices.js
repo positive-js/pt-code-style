@@ -90,5 +90,6 @@ module.exports = {
         "no-null/no-null": "off",
         "radix": "off",
         "valid-typeof": "off",
+        "newline-before-return": "warn"
     }
 };

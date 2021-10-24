@@ -11,6 +11,7 @@ module.exports = {
         '@angular-eslint/directive-class-suffix': 'warn',
         '@angular-eslint/no-input-rename': 'warn',
         '@angular-eslint/use-component-view-encapsulation': 'warn',
-        '@angular-eslint/no-output-native': 'warn'
+        '@angular-eslint/no-output-native': 'warn',
+        '@angular-eslint/component-class-suffix': 'warn'
     }
 }

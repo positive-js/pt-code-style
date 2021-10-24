@@ -64,14 +64,13 @@ module.exports = {
                 selector: 'class',
                 modifiers: ['abstract'],
                 format: ['StrictPascalCase'],
-                prefix: ['Abstract']
             },
             { selector: 'method', format: ['camelCase'] },
             { selector: 'accessor', format: ['camelCase'] },
             { selector: 'enum', format: ['StrictPascalCase'] },
             { selector: 'enumMember', format: ['PascalCase', 'UPPER_CASE'] },
             { selector: 'typeLike', format: ['StrictPascalCase'] },
-            { selector: 'interface', format: ['StrictPascalCase'], prefix: ['I'] }
+            { selector: 'interface', format: ['PascalCase'] }
         ],
 
         /**
