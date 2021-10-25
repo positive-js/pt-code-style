@@ -78,10 +78,7 @@ module.exports = {
         ],
         "arrow-body-style": [
             "warn",
-            "as-needed", // let foo = () => 0; и let foo = () => { bar(); };
-            {
-                "requireReturnForObjectLiteral": true // let foo = () => { return { bar: 0 }; };
-            }
+            "as-needed" // let foo = () => 0; и let foo = () => { bar(); };
         ],
 
         "max-classes-per-file": "off",
