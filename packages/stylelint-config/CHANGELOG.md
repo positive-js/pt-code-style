@@ -1,3 +1,11 @@
+## @ptsecurity/stylelint-config [1.2.2](https://gitlab.ptsecurity.com/ui/core/pt-code-style/compare/@ptsecurity/stylelint-config@1.2.1...@ptsecurity/stylelint-config@1.2.2) (2021-10-25)
+
+
+### 🐛  Fix
+#### Fix a bug.
+
+* arrow-body-style: as needed ([](https://gitlab.ptsecurity.com/ui/core/pt-code-style/commit/b3d73e4))
+
 ## @ptsecurity/stylelint-config [1.2.1](https://gitlab.ptsecurity.com/ui/core/pt-code-style/compare/@ptsecurity/stylelint-config@1.2.0...@ptsecurity/stylelint-config@1.2.1) (2021-10-24)
 
 
