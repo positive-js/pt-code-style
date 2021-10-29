@@ -1,3 +1,11 @@
+## @ptsecurity/prettier-config [1.2.3](https://gitlab.ptsecurity.com/ui/core/pt-code-style/compare/@ptsecurity/prettier-config@1.2.2...@ptsecurity/prettier-config@1.2.3) (2021-10-29)
+
+
+### 🐛  Fix
+#### Fix a bug.
+
+* add ignoreEnums to no-magic-numbers ([](https://gitlab.ptsecurity.com/ui/core/pt-code-style/commit/9f99958))
+
 ## @ptsecurity/prettier-config [1.2.2](https://gitlab.ptsecurity.com/ui/core/pt-code-style/compare/@ptsecurity/prettier-config@1.2.1...@ptsecurity/prettier-config@1.2.2) (2021-10-25)
 
 
