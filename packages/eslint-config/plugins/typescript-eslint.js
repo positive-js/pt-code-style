@@ -146,7 +146,8 @@ module.exports = {
             {
                 ignore: [-1, 0, 1, 2],
                 ignoreDefaultValues: true,
-                ignoreReadonlyClassProperties: true
+                ignoreReadonlyClassProperties: true,
+                ignoreEnums: true
             }],
         '@typescript-eslint/no-misused-promises': 'warn'
     }
