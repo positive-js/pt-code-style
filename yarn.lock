@@ -9,12 +9,25 @@
   dependencies:
     "@nrwl/devkit" ">= 12.0.0 < 13.0.0"
 
+"@angular-eslint/bundled-angular-compiler@12.6.1":
+  version "12.6.1"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-12.6.1.tgz#9fcb606f74fb8e287e628309263f3968c6ff849e"
+  integrity sha1-n8tgb3T7jih+YoMJJj85aMb/hJ4=
+
 "@angular-eslint/eslint-plugin@^12.3.1":
   version "12.3.1"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@angular-eslint/eslint-plugin/-/eslint-plugin-12.3.1.tgz#00ac44d5986d86113d65a5373746e1fc22fd8702"
   integrity sha1-AKxE1ZhthhE9ZaU3N0bh/CL9hwI=
   dependencies:
     "@typescript-eslint/experimental-utils" "4.28.2"
+
+"@angular-eslint/template-parser@^12.6.1":
+  version "12.6.1"
+  resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/@angular-eslint/template-parser/-/template-parser-12.6.1.tgz#4d764e2392e47b3e18446fb591dcfc2882b9afde"
+  integrity sha1-TXZOI5Lkez4YRG+1kdz8KIK5r94=
+  dependencies:
+    "@angular-eslint/bundled-angular-compiler" "12.6.1"
+    eslint-scope "^5.1.0"
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
@@ -3715,7 +3728,7 @@ eslint-plugin-rxjs@^3.0.1:
     tsutils "^3.0.0"
     tsutils-etc "^1.3.4"
 
-eslint-scope@^5.1.1:
+eslint-scope@^5.1.0, eslint-scope@^5.1.1:
   version "5.1.1"
   resolved "https://repo.ptsecurity.ru:443/artifactory/api/npm/npmjs/eslint-scope/-/eslint-scope-5.1.1.tgz#e786e59a66cb92b3f6c1fb0d508aab174848f48c"
   integrity sha1-54blmmbLkrP2wfsNUIqrF0hI9Iw=
