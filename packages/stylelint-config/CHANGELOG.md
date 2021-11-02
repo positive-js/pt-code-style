@@ -1,3 +1,11 @@
+# @ptsecurity/stylelint-config [1.3.0](https://gitlab.ptsecurity.com/ui/core/pt-code-style/compare/@ptsecurity/stylelint-config@1.2.3...@ptsecurity/stylelint-config@1.3.0) (2021-11-02)
+
+
+### ✨  Feat
+#### Introduce new features.
+
+* **eslint:** Добавлена базовая конфигурация для html ([](https://gitlab.ptsecurity.com/ui/core/pt-code-style/commit/fffeb19))
+
 ## @ptsecurity/stylelint-config [1.2.3](https://gitlab.ptsecurity.com/ui/core/pt-code-style/compare/@ptsecurity/stylelint-config@1.2.2...@ptsecurity/stylelint-config@1.2.3) (2021-10-29)
 
 
