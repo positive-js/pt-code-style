@@ -9,7 +9,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+https://gitlab.ptsecurity.com/ui/core/pt-code-style.git"
+        "url": "git+https://github.com/positive-js/pt-code-style.git"
     },
     "workspaces": [
         "packages/*"
