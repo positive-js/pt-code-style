@@ -1,0 +1,41 @@
+---
+include:
+    - project: 'gitlab-ci-template/ui-template'
+      ref: 1.0.113  # Версия (git-тег) шаблона. ИЗМЕНИТЬ НА АКТУАЛЬНУЮ!
+      file:
+          - includes/common.yml
+          - includes/prepare.yml
+          - includes/publish.yml
+
+
+variables:
+    CROSSBUILDER_TEMPLATES_REF: 1.0.113  # Версия (git-тег) шаблона. ИЗМЕНИТЬ НА АКТУАЛЬНУЮ!
+    CROSSBUILDER_TEMPLATES_PROJECT: "https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.ptsecurity.com/gitlab-ci-template/ui-template.git"
+
+image: docker-ui.ptsecurity.ru:444/node:14.16.0-browsers
+
+stages:
+    - prepare-global
+    - publish
+
+default:
+    tags:
+        - linux
+        - docker
+        - build-med
+
+
+Prepare Global:
+    stage: prepare-global
+    extends:
+        - .prepare-install
+        - .build-servers
+
+Publish package release:
+    extends:
+        - .release-branch
+    stage: publish
+    dependencies:
+        - Prepare Global
+    script:
+        - yarn run semantic-release

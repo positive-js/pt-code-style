@@ -1,0 +1,21 @@
+{
+    "name": "@ptsecurity/prettier-config",
+    "author": "Positive Technologies",
+    "license": "MIT",
+    "version": "0.0.0",
+    "description": "Positive Technologies prettier config.",
+    "engines": {
+        "node": ">=12"
+    },
+    "keywords": [
+        "prettier",
+        "formatter"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {},
+    "peerDependencies": {
+        "prettier": "^2.3.2"
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "name": "@ptsecurity/code-styles",
+    "private": true,
+    "description": "Positive Technologies code style rules",
+    "author": {
+        "name": "Positive Technologies",
+        "url": "https://ptsecurity.com"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.ptsecurity.com/ui/core/pt-code-style.git"
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "engines": {
+        "node": ">=12"
+    },
+    "scripts": {
+        "postinstall": "lerna bootstrap",
+        "test": "yarn workspaces run test",
+        "semantic-release": "multi-semantic-release"
+    },
+    "keywords": [
+        "eslint",
+        "stylelint",
+        "prettier"
+    ],
+    "devDependencies": {
+        "@commitlint/cli": "^11.0.0",
+        "@commitlint/config-conventional": "^11.0.0",
+        "@ptsecurity/commitlint-config": "^1.0.0",
+        "@semantic-release/changelog": "^5.0.1",
+        "@semantic-release/commit-analyzer": "^8.0.1",
+        "@semantic-release/exec": "^5.0.0",
+        "@semantic-release/git": "^9.0.0",
+        "@semantic-release/github": "^7.2.3",
+        "@semantic-release/gitlab": "^6.2.1",
+        "@semantic-release/npm": "^7.1.3",
+        "@semantic-release/release-notes-generator": "^9.0.3",
+        "dotenv": "^10.0.0",
+        "grapheme-splitter": "^1.0.4",
+        "is-ci": "^3.0.0",
+        "lerna": "^4.0.0",
+        "lodash": "^4.17.21",
+        "multi-semantic-release": "^2.8.2",
+        "semantic-release": "^17.4.4",
+        "semantic-release-commit-filter": "^1.0.2"
+    },
+    "peerDependencies": {
+        "@angular-eslint/builder": "^4.3.0",
+        "@angular-eslint/eslint-plugin": "^12.5.0",
+        "@angular-eslint/eslint-plugin-template": "^12.5.0",
+        "@ptsecurity/eslint-config": "^1.2.0",
+        "@ptsecurity/prettier-config": "^1.2.0",
+        "@ptsecurity/stylelint-config": "^1.2.0",
+        "eslint": "^7.32.0",
+        "eslint-import-resolver-typescript": "^2.5.0",
+        "eslint-plugin-array-func": "^3.1.7",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "eslint-plugin-rxjs": "^3.3.7",
+        "prettier": "^2.2.1",
+        "stylelint": "^13.13.1",
+        "eslint-plugin-prettier": "^4.0.0",
+        "stylelint-order": "^4.1.0",
+        "stylelint-prettier": "^1.2.0"
+    },
+    "version": "0.0.0"
+}

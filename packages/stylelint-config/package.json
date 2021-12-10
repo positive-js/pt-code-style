@@ -1,0 +1,34 @@
+{
+    "name": "@ptsecurity/stylelint-config",
+    "version": "0.0.0",
+    "description": "Positive Technologies stylelint config.",
+    "scripts": {},
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "stylelint",
+        "formatter"
+    ],
+    "type": "commonjs",
+    "main": "src",
+    "author": "Positive Technologies",
+    "license": "MIT",
+    "dependencies": {
+        "stylelint": "^13.8.0",
+        "stylelint-config-prettier": "^8.0.2",
+        "stylelint-config-standard": "^20.0.0",
+        "stylelint-prettier": "^1.1.2",
+        "stylelint-scss": "^3.18.0",
+        "stylelint-config-rational-order": "^0.1.2"
+    },
+    "peerDependencies": {
+        "prettier": "^2.3.2",
+        "stylelint": "^13.13.1"
+    },
+    "files": [
+        "src",
+        "meticulous.js",
+        "native.js"
+    ]
+}
