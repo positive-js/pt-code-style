@@ -1,3 +1,11 @@
+## @ptsecurity/eslint-config [1.4.2](https://github.com/positive-js/pt-code-style/compare/@ptsecurity/eslint-config@1.4.1...@ptsecurity/eslint-config@1.4.2) (2022-01-15)
+
+
+### 🐛  Fix
+#### Fix a bug.
+
+* eslint config refactoring overrides name ([](https://github.com/positive-js/pt-code-style/commit/dd4ac8c))
+
 ## @ptsecurity/eslint-config [1.4.1](https://github.com/positive-js/pt-code-style/compare/@ptsecurity/eslint-config@1.4.0...@ptsecurity/eslint-config@1.4.1) (2022-01-15)
 
 
