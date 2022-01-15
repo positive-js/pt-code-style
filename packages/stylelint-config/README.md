@@ -9,6 +9,7 @@ module.exports = {
 }
 ```
 
+
 ## Настройка IDE
 Конфигурация stylelint содержит [stylelint-prettier plugin](https://github.com/prettier/stylelint-prettier). 
 Поэтому, для автоматического форматирования файлов стилей, а так же для сортировки свойств стилей, 
