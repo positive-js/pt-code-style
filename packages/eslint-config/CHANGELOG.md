@@ -1,3 +1,17 @@
+## @ptsecurity/eslint-config [1.4.1](https://github.com/positive-js/pt-code-style/compare/@ptsecurity/eslint-config@1.4.0...@ptsecurity/eslint-config@1.4.1) (2022-01-15)
+
+
+### 🐛  Fix
+#### Fix a bug.
+
+* readme text error ([](https://github.com/positive-js/pt-code-style/commit/677afc0))
+
+
+### ♻️  Refactor
+#### Refactor code.
+
+* applying global Linting rules ([](https://github.com/positive-js/pt-code-style/commit/0273f0f))
+
 # @ptsecurity/eslint-config [1.4.0](https://github.com/positive-js/pt-code-style/compare/@ptsecurity/eslint-config@1.3.1...@ptsecurity/eslint-config@1.4.0) (2022-01-15)
 
 
