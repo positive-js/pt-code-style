@@ -1,3 +1,11 @@
+# @ptsecurity/prettier-config [1.4.0](https://github.com/positive-js/pt-code-style/compare/@ptsecurity/prettier-config@1.3.1...@ptsecurity/prettier-config@1.4.0) (2022-01-15)
+
+
+### ✨  Feat
+#### Introduce new features.
+
+* **eslint-config:** added angular plugin-template ([](https://github.com/positive-js/pt-code-style/commit/6ffbf0e))
+
 ## @ptsecurity/prettier-config [1.3.1](https://github.com/positive-js/pt-code-style/compare/@ptsecurity/prettier-config@1.3.0...@ptsecurity/prettier-config@1.3.1) (2022-01-15)
 
 
