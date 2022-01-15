@@ -1,3 +1,11 @@
+## @ptsecurity/eslint-config [1.4.3](https://github.com/positive-js/pt-code-style/compare/@ptsecurity/eslint-config@1.4.2...@ptsecurity/eslint-config@1.4.3) (2022-01-15)
+
+
+### 🐛  Fix
+#### Fix a bug.
+
+* added optional dependencies ([](https://github.com/positive-js/pt-code-style/commit/78571b2))
+
 ## @ptsecurity/eslint-config [1.4.2](https://github.com/positive-js/pt-code-style/compare/@ptsecurity/eslint-config@1.4.1...@ptsecurity/eslint-config@1.4.2) (2022-01-15)
 
 
