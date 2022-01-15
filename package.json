@@ -19,7 +19,6 @@
     },
     "scripts": {
         "postinstall": "lerna bootstrap",
-        "test": "yarn workspaces run test",
         "semantic-release": "multi-semantic-release"
     },
     "keywords": [

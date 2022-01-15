@@ -1,13 +1,9 @@
 const baseConfig = require('./base');
-const typescript = require('./overrides/typesript');
-const javascript = require('./overrides/javascript');
 const html = require('./overrides/html');
+const javascript = require('./overrides/javascript');
+const typescript = require('./overrides/typescript');
 
 module.exports = {
     ...baseConfig,
-    overrides: [
-        typescript,
-        javascript,
-        html
-    ]
+    overrides: [typescript, javascript, html]
 };
