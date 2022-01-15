@@ -63,13 +63,12 @@ const writerOpts = {
 
         const subjectTemp = splitter.splitGraphemes(commit.subject);
         const isEmojiMatch = subjectTemp[0] === typeSpec.emoji;
-        const subject = isEmojiMatch
+
+        commit.subject = isEmojiMatch
             ? commit.subject
                 .replace(_pullAt(subjectTemp, [0]), '')
                 .replace(_pullAt(subjectTemp, [0]), '')
             : commit.subject;
-
-        commit.subject = subject;
 
         return commit;
     },
@@ -81,7 +80,7 @@ const writerOpts = {
 module.exports = {
 
     branches: [
-        'master',
+        'main',
         { name: 'release/\\w*' }
     ],
 
@@ -121,11 +120,10 @@ module.exports = {
             }
         ],
         [
-            '@semantic-release/gitlab',
+            '@semantic-release/github',
             {
-                assets: ['CHANGELOG.md'],
-                gitlabUrl: 'https://gitlab.ptsecurity.com',
-                gitlabApiPathPrefix: '/api/v4'
+                "successComment": false,
+                "failComment": false
             }
         ],
         [
