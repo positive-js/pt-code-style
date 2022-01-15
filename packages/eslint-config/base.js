@@ -1,4 +1,5 @@
-const getIgnorePatterns = require("./utils/get-ignore-patterns");
+const getIgnorePatterns = require('./utils/get-ignore-patterns');
+
 /**
  * Базовый конфиг
  */
@@ -10,7 +11,7 @@ module.exports = {
     settings: {},
     globals: {
         __DEV__: 'readonly',
-        SharedArrayBuffer: 'readonly',
+        SharedArrayBuffer: 'readonly'
     },
     env: {
         browser: true,
@@ -19,4 +20,3 @@ module.exports = {
     },
     root: true
 };
-
