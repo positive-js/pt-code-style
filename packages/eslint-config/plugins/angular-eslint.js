@@ -1,7 +1,7 @@
 module.exports = {
     extends: [
         'plugin:@angular-eslint/ng-cli-compat',
-        "plugin:@angular-eslint/recommended",
+        'plugin:@angular-eslint/recommended',
         'plugin:@angular-eslint/template/process-inline-templates'
     ],
     rules: {
@@ -14,4 +14,4 @@ module.exports = {
         '@angular-eslint/no-output-native': 'warn',
         '@angular-eslint/component-class-suffix': 'warn'
     }
-}
+};

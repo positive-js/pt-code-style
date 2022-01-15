@@ -1,6 +1,5 @@
 const confusingBrowserGlobals = require('confusing-browser-globals');
 
-
 module.exports = {
     rules: {
         /**
@@ -31,14 +30,14 @@ module.exports = {
         /**
          * https://eslint.org/docs/rules/no-shadow
          */
-        "no-shadow": [
-            "error",
+        'no-shadow': [
+            'error',
             {
-                "hoist": "all",
-                "allow": ["done", "resolve", "reject"]
+                hoist: 'all',
+                allow: ['done', 'resolve', 'reject']
             }
         ],
 
-        'no-underscore-dangle': ["warn", { "enforceInMethodNames": true, allowAfterThis: true }]
+        'no-underscore-dangle': ['warn', { enforceInMethodNames: true, allowAfterThis: true }]
     }
 };

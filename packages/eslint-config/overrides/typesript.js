@@ -1,5 +1,5 @@
-const loadCore = require("../utils/load-core");
-const loadPlugins = require("../utils/load-plugins");
+const loadCore = require('../utils/load-core');
+const loadPlugins = require('../utils/load-plugins');
 
 const baseConfig = {
     files: ['*.ts'],
@@ -9,16 +9,9 @@ const baseConfig = {
         ecmaVersion: 2020,
         sourceType: 'module'
     }
-}
+};
 
-loadCore(baseConfig, [
-    'best-practices',
-    'deprecated',
-    'possible-errors',
-    'variables',
-    'naming',
-    'restricted-imports'
-]);
+loadCore(baseConfig, ['best-practices', 'deprecated', 'possible-errors', 'variables', 'naming', 'restricted-imports']);
 
 loadPlugins(baseConfig, [
     'array-func',

@@ -1,13 +1,13 @@
 module.exports = {
     rules: {
-        "prefer-arrow/prefer-arrow-functions": [
-            "warn",
+        'prefer-arrow/prefer-arrow-functions': [
+            'warn',
             {
-                "disallowPrototype": true,
-                "singleReturnOnly": true,
-                "classPropertiesAllowed": false,
-                "allowStandaloneDeclarations": true
+                disallowPrototype: true,
+                singleReturnOnly: true,
+                classPropertiesAllowed: false,
+                allowStandaloneDeclarations: true
             }
         ]
     }
-}
+};

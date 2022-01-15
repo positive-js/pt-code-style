@@ -5,4 +5,4 @@ module.exports = {
          */
         'no-compare-neg-zero': 'error'
     }
-}
+};

@@ -10,10 +10,7 @@ module.exports = {
             '@typescript-eslint/parser': ['.ts', '.tsx']
         }
     },
-    extends: [
-        'plugin:import/recommended',
-        'plugin:import/typescript'
-    ],
+    extends: ['plugin:import/recommended', 'plugin:import/typescript'],
     // https://github.com/benmosher/eslint-plugin-import#rules
     rules: {
         // #region Static analysis
@@ -161,33 +158,26 @@ module.exports = {
             'warn',
             {
                 // pathGroups: [{ pattern: '*/**', group: 'internal', position: 'before' }],
-                groups: [
-                    'external',
-                    'internal',
-                    'builtin',
-                    'parent',
-                    'index',
-                    'sibling'
-                ],
+                groups: ['external', 'internal', 'builtin', 'parent', 'index', 'sibling'],
                 pathGroupsExcludedImportTypes: [],
                 pathGroups: [
                     {
-                        "pattern": "~*",
-                        "group": "external",
+                        pattern: '~*',
+                        group: 'external'
                     },
                     {
-                        "pattern": "~**/**",
-                        "group": "external"
-                    },
-                    ],
+                        pattern: '~**/**',
+                        group: 'external'
+                    }
+                ],
                 'newlines-between': 'always',
-                alphabetize: { order: 'asc', caseInsensitive: true },
+                alphabetize: { order: 'asc', caseInsensitive: true }
             }
         ],
 
         // Enforce a newline after import statements [autofix]
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md
-        'import/newline-after-import': ['warn', { 'count': 1 }],
+        'import/newline-after-import': ['warn', { count: 1 }],
 
         // Prefer a default export if module exports a single name
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
@@ -227,9 +217,9 @@ module.exports = {
         // #endregion Style guide
 
         // import _ from 'foo' вместо import 'foo'
-        "import/no-unassigned-import": "error",
-        "import/no-extraneous-dependencies": "off",
-        "import/no-internal-modules": "off",
+        'import/no-unassigned-import': 'error',
+        'import/no-extraneous-dependencies': 'off',
+        'import/no-internal-modules': 'off'
     },
 
     overrides: [

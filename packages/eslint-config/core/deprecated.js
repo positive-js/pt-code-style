@@ -10,4 +10,4 @@ module.exports = {
          */
         'no-new-require': 'off'
     }
-}
+};

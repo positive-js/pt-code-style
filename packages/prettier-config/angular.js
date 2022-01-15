@@ -1,4 +1,4 @@
-const baseConfig = require('./base')
+const baseConfig = require('./base');
 
 module.exports = {
     ...baseConfig,
@@ -7,8 +7,8 @@ module.exports = {
         {
             files: '*.html',
             options: {
-                parser: 'angular',
-            },
-        },
-    ],
-}
+                parser: 'angular'
+            }
+        }
+    ]
+};

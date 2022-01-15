@@ -6,8 +6,8 @@ module.exports = {
         {
             files: ['*.ts', '*.tsx'],
             options: {
-                parser: 'babel-ts',
+                parser: 'babel-ts'
             }
         }
     ]
-}
+};
