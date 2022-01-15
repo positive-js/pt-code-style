@@ -1,3 +1,11 @@
+## @ptsecurity/stylelint-config [1.4.2](https://github.com/positive-js/pt-code-style/compare/@ptsecurity/stylelint-config@1.4.1...@ptsecurity/stylelint-config@1.4.2) (2022-01-15)
+
+
+### 🐛  Fix
+#### Fix a bug.
+
+* readme test ([](https://github.com/positive-js/pt-code-style/commit/3b55bef))
+
 ## @ptsecurity/stylelint-config [1.4.1](https://github.com/positive-js/pt-code-style/compare/@ptsecurity/stylelint-config@1.4.0...@ptsecurity/stylelint-config@1.4.1) (2022-01-15)
 
 

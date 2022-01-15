@@ -1,6 +1,6 @@
 {
     "name": "@ptsecurity/stylelint-config",
-    "version": "0.0.0",
+    "version": "1.4.2",
     "description": "Positive Technologies stylelint config.",
     "scripts": {},
     "publishConfig": {
