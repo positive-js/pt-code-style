@@ -1,4 +1,5 @@
 const isCI = require('is-ci');
+
 const release = require('../../tools/semantic-release/release.config.js');
 const name = require('./package.json').name.split('/')[1];
 
