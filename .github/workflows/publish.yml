@@ -4,6 +4,7 @@ on:
     push:
         branches:
             - "([0-9])?(.{+([0-9]),x}).x"
+            - "release/**"
             - "main"
             - "next"
             - "alpha"
@@ -36,11 +37,7 @@ jobs:
 
             - name: Install dependencies
               if: steps.modules-cache.outputs.cache-hit != 'true'
-              run: npm ci --ignore-scripts
-
-            - name: Lerna bootstrap
-              if: steps.cache.outputs.cache-hit != 'true'
-              run: npm run lerna -- bootstrap
+              run: npm ci
 
             - name: NPM publish
               id: publish
