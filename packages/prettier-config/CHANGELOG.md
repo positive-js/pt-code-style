@@ -1,3 +1,17 @@
+## @ptsecurity/prettier-config [1.3.1](https://github.com/positive-js/pt-code-style/compare/@ptsecurity/prettier-config@1.3.0...@ptsecurity/prettier-config@1.3.1) (2022-01-15)
+
+
+### 🐛  Fix
+#### Fix a bug.
+
+* updated node version ([](https://github.com/positive-js/pt-code-style/commit/75c3d79))
+
+
+### 🔨  Build
+#### Add or update development scripts.
+
+* added github-ci and updated s-relase ([](https://github.com/positive-js/pt-code-style/commit/52babbe))
+
 # @ptsecurity/prettier-config [1.3.0](https://gitlab.ptsecurity.com/ui/core/pt-code-style/compare/@ptsecurity/prettier-config@1.2.3...@ptsecurity/prettier-config@1.3.0) (2021-11-02)
 
 
