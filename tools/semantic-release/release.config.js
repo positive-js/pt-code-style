@@ -9,7 +9,7 @@ const splitter = new GraphemeSplitter();
 const parserOpts = {
     headerPattern: /^(.*?)(?:\((.*)\))?:?\s(.*)$/,
     headerCorrespondence: ['type', 'scope', 'subject'],
-    noteKeywords: ['💥️  BREAKING CHANGE', 'BREAKING CHANGE'],
+    noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING'],
     referenceActions: typeSpecs.map(({type}) => type),
     revertPattern: /^Revert\s"([\s\S]*)"\s*This reverts commit (\w*)\./
 };
@@ -41,14 +41,14 @@ const writerOpts = {
         commit.type = `${typeSpec.emoji}  ${typeSpec.section}`;
         commit.typeSpecIndex = typeSpecIndex;
         // @semver
-        if (typeSpec.semver === 'major' || typeSpec.semver === 'breaking') {
-            commit.order = 1;
+        if (typeSpec.semver === 'breaking' || typeSpec.semver === 'major') {
+            commit.order = 1
         }
-        if (typeSpec.semver === 'minor' || typeSpec.semver === 'feature') {
-            commit.order = 3;
+        if (typeSpec.semver === 'feature' || typeSpec.semver === 'minor') {
+            commit.order = 3
         }
-        if (typeSpec.semver === 'patch') {
-            commit.order = 5;
+        if (typeSpec.semver === 'fix' || typeSpec.semver === 'patch') {
+            commit.order = 5
         }
         if (typeSpec.semver === null) {
             commit.order = 7;
