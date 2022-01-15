@@ -14,7 +14,8 @@
     "type": "commonjs",
     "keywords": [
         "eslint",
-        "eslintconfig"
+        "eslintconfig",
+        "styleguide"
     ],
     "scripts": {},
     "dependencies": {
@@ -36,6 +37,8 @@
         "eslint-plugin-jsdoc": "^30.7.6",
         "eslint-plugin-prefer-arrow": "1.2.2",
         "eslint-plugin-prettier": "^3.3.1",
+        "eslint-plugin-react": "^7.28.0",
+        "eslint-plugin-react-hooks": "^4.3.0",
         "eslint-plugin-rxjs": "^3.0.1",
         "find-up": "^5.0.0",
         "prettier": "^2.3.2",

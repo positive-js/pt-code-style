@@ -2,6 +2,12 @@
 
 Правила линтинга для frontend проектов Positive Technologies.
 
+| Package                                                     | Description                       | Latest
+|-------------------------------------------------------------|-----------------------------------|---|
+| [@ptsecurity/eslint-toolkit](./packages/eslint-config)      | Правила Eslint для Angular, React | [![npm](https://img.shields.io/npm/v/@ptsecurity/eslint-config/latest.svg?label=&color=09e)](https://www.npmjs.com/package/@ptsecurity/eslint-config)
+| [@ptsecurity/prettier-config](./packages/prettier-config)   | Конфигурация Prettier             | [![npm](https://img.shields.io/npm/v/@ptsecurity/prettier-config/latest.svg?label=&color=09e)](https://www.npmjs.com/package/@ptsecurity/prettier-config)
+| [@ptsecurity/stylelint-config](./packages/stylelint-config) | Конфигурация Stylelint для SCSS   | [![npm](https://img.shields.io/npm/v/@ptsecurity/stylelint-config/latest.svg?label=&color=09e)](https://www.npmjs.com/package/@ptsecurity/stylelint-config)
+
 ## Подключение к проекту
 Установите пакеты
 ```
