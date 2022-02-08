@@ -1,3 +1,11 @@
+# @ptsecurity/eslint-config [1.5.0](https://github.com/positive-js/pt-code-style/compare/@ptsecurity/eslint-config@1.4.3...@ptsecurity/eslint-config@1.5.0) (2022-02-08)
+
+
+### ✨  Feat
+#### Introduce new features.
+
+* **eslint:** Extend typescript-eslint/naming-convention for class public properties ([](https://github.com/positive-js/pt-code-style/commit/ff52509))
+
 ## @ptsecurity/eslint-config [1.4.3](https://github.com/positive-js/pt-code-style/compare/@ptsecurity/eslint-config@1.4.2...@ptsecurity/eslint-config@1.4.3) (2022-01-15)
 
 

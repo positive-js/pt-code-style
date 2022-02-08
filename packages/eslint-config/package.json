@@ -1,6 +1,6 @@
 {
     "name": "@ptsecurity/eslint-config",
-    "version": "1.4.3",
+    "version": "1.5.0",
     "description": "ESLint shareable config for the Positive Technologies JavaScript style guide.",
     "author": "Positive Technologies",
     "license": "MIT",
