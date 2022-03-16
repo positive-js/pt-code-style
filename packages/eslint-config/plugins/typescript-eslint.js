@@ -71,7 +71,7 @@ module.exports = {
             { selector: 'accessor', format: ['camelCase'] },
             { selector: 'enum', format: ['StrictPascalCase'] },
             { selector: 'enumMember', format: ['PascalCase', 'UPPER_CASE'] },
-            { selector: 'typeLike', format: ['StrictPascalCase'] },
+            { selector: 'typeLike', format: ['PascalCase'] },
             { selector: 'interface', format: ['PascalCase'] }
         ],
 
